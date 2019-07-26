@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Лендинг</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="main-header-wrap">
+		<header class="main-header">
+			<h1 class="main-title">Путешествуй Легко!</h1>
+			<nav class="main-menu">
+				<a href="">Главная</a>
+				<a href="">Услуги</a>
+				<a href="">Отзывы</a>
+				<a href="">Вакансии</a>
+				<a id="last-menu-item" href="">Контакты</a>
+			</nav>
+			<div class="menu-button-wrap">
+				<button class="menu-button" onclick="myFunction1()"></button>
+				<div class="menu-button-popup">
+					<ul>
+						<li><a href="">Главная</a></li>
+						<li><a href="">Услуги</a></li>
+						<li><a href="">Отзывы</a></li>
+						<li><a href="">Вакансии</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+	</div>
+	<main>
+		<div class="main-content-wrap">
+			<div class="main-content">
+				<div class="info">
+					<h2 class="info-heading">Путешествовать с нами легче</h2>
+					<p class="info-subheading">Мы планируем всё путешествие, а вы отдыхаете</p>
+					<p class="info-text">Узнайте о том, как мы можем сделать ваше путешествие лучше. Закажите предварительную оценку планирования вашего путешествия. Укажите свое имя, откуда и куда вы едите, чтобы наш специалист подготовил общую информацию. Мы свяжемся с вами для более подробного построения маршрута.</p>
+				</div>
+				<div class="send-form-wrap">
+					<form class="send-form" action="">
+						<span class="input-title">Имя:</span>
+						<input class="send-form-input" type="text" name="name" placeholder="Василий Иванов">
+						<span class="input-title">Почта:</span>
+						<input class="send-form-input" type="text" name="email" placeholder="example@mail.ru">
+						<span class="input-title">Откуда:</span>
+						<input class="send-form-input" type="text" name="start" placeholder="Россия">
+						<span class="input-title">Куда:</span>
+						<input class="send-form-input" type="text" name="destination" placeholder="Мексика">
+						<button type="submit" class="action-button">Заказать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="main-background"></div>
+	</main>
+	<footer>
+		<p>@ 2011 - 2018 Путешествуй Легко!</p>
+	</footer>
+</body>
+</html>

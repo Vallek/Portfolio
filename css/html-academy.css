@@ -1,0 +1,13 @@
+.html-ac-main {
+	flex-direction: column;
+}
+
+.main-wrapper {
+	display: flex;
+	align-items: flex-start;
+}
+
+.mockup-card {
+	max-width: 350px;
+	margin-right: 3vw;
+}
