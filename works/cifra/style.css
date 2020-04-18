@@ -1,0 +1,634 @@
+@font-face {
+	font-family: 'RussoOne-Regular';
+	src: url('Fonts/RussoOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'bighaus-titul';
+	src: url('Fonts/BighausTitul.woff') format('woff');
+}
+
+.main-header {
+	background-image: url(Images/back2.png);
+	background-repeat: repeat;
+	background-size: 15px auto;
+}
+
+.main-menu {
+	background-color: rgb(255,255,255);
+	text-align: right;
+	font-family: 'RussoOne-Regular';
+	font-size: 25px;
+	line-height: 80px;
+}
+
+body {
+	font-family: 'bighaus-titul';
+	margin: 0px;
+	/*--red-color: rgb(229, 41, 41);*/
+	--red-color: #df0112;
+	/*--blue-color: rgb(28, 67, 187);*/
+	--blue-color: #0000bd;
+}
+
+/*Header*/
+/*Header nav*/
+.logo {
+	position: absolute;
+	top: -30px;
+	height: 180px;
+	margin-left: 3vw;
+}
+
+.logo-overlay {
+	display: none;
+	position: absolute;
+	top: -40px;
+	height: 180px;
+	margin-left: 3vw;
+	mix-blend-mode: color-dodge;
+}
+
+.logo-link:active .logo + .logo-overlay {
+	display: block;
+}
+
+.logo-link:active .logo {
+	top: -40px;
+}
+
+.main-menu {
+	padding-right: 10px;
+	padding-left: 220px;
+}
+
+.main-menu a {
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+.main-menu a:hover {
+	color: var(--red-color);
+}
+
+.new-works::after {
+	content: "5";
+}
+
+.new-jobs::after {
+	content: "2";
+}
+
+.new-works::after,
+.new-jobs::after {
+	position: relative;
+	font-size: 15px;
+	/* clip-path: polygon(29% 0px, 100% 0%, 100% 79%, 36% 79%, 0px 100%, 29% 66%); */
+	padding: 5px 5px 10px 10px;
+	color: rgb(255,255,255);
+	background-color: var(--red-color);
+	bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+	.logo {
+		display: none;
+	}
+	.main-menu {
+		padding-left: 0px;
+	}
+}
+
+/*Header block*/
+.header-title-image-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 90px 0px;
+	min-width: -moz-fit-content;
+	min-width: fit-content;
+}
+
+.main-title {
+	font-family: 'bighaus-titul', sans-serif;
+	font-weight: 900;
+	color: var(--blue-color);
+	font-size: 100px;
+	text-transform: uppercase;
+	margin: 0px;
+	margin-left: 20px;
+	line-height: 80px;
+	z-index: 2;
+}
+
+.main-image {
+	z-index: 1;
+	height: 400px;
+}
+
+@media screen and (max-width: 965px) {
+	.main-image {
+		position: absolute;
+		right: 10vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main-title {
+		font-size: 15vw;
+	}
+	.main-image {
+		height: 200px;
+	}
+}
+
+/*Main*/
+/*Intro*/
+main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.intro-words {
+	max-width: 50vw;
+	text-align: center;
+	padding: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.intro-words h2 {
+	font-family: 'bighaus-titul';
+	font-size: 30px;
+	line-height: 40px;
+	color: var(--red-color); 
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.intro-words p {
+	font-family: sans-serif;
+	font-size: 20px;
+	color: var(--red-color); 
+	margin-bottom: 40px;
+	margin-top: 0px;
+}
+
+.show-all-link {
+	display: block;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
+	color: rgb(255,255,255);
+	font-size: 20px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.red-background {
+	background-color: var(--red-color);
+}
+
+.red-background:hover {
+	background-color: var(--blue-color);
+}
+
+.blue-background {
+	background-color: var(--blue-color);
+}
+
+.blue-background:hover {
+	background-color: var(--red-color);
+}
+
+.white-background {
+	background-color: rgb(255,255,255);
+}
+
+.white-background:hover {
+	color: rgb(255,255,255);
+	background-color: var(--red-color);
+}
+
+/*Works*/
+.our-work-wrap {
+	background-color: #EAE5DF;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 80px;
+}
+
+.our-work {
+	max-width: 50vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.our-work h2 {
+	text-align: center;
+	font-family: 'bighaus-titul';
+	font-size: 80px;
+	line-height: 60px;
+	color: var(--blue-color); 
+	padding-top: 80px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.our-work h3 {
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 30px;
+	line-height: 40px;
+	color: var(--blue-color); 
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 400px) {
+	.our-work h2 {
+		font-size: 15vw;
+	}
+}
+
+.work-examples-wrap {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.image-wrap {
+	position: relative;
+}
+
+.work-example {
+	
+}
+
+.work-example img {
+	display: block;
+	max-width: 30vw;
+	max-height: 400px;	
+}
+
+.image {
+	/*filter: grayscale(1);*/
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	/*opacity: 0.7;*/
+	transition: .5s ease;
+	background-image: url(Images/back2333.png);
+	background-size: 10px;
+	mix-blend-mode: color;
+}
+
+.overlay2 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+	transition: .5s ease;
+	background-color: rgba(0,140,186,0.5);
+	background-image: url(Images/back2333.png);
+	background-size: 10px;
+	mix-blend-mode: color-burn;
+	filter: grayscale(1);
+}
+
+.work-example:hover .overlay {
+	opacity: 0;
+}
+
+.work-example:hover .overlay2 {
+	opacity: 0;
+}
+
+.work-example:hover .image {
+	filter: none;
+}
+
+.work-example-caption {
+	background-color: white;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.work-example-caption h3 {
+	font-size: 25px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-family: 'bighaus-titul';
+}
+
+.work-example-caption span {
+	font-family: sans-serif;
+}
+
+.work-example:hover .work-example-caption {
+	color: white;
+	background-color: var(--blue-color);
+}
+
+.work-example:hover .work-example-caption h3 {
+	color: white;
+	background-color: var(--blue-color);
+}
+
+/*Price and Jobs*/
+.price-jobs {
+	display: flex;
+	padding: 40px 0px;
+	max-width: 1200px;
+}
+
+.price {
+	width: 30vw;
+	background-image: url(Images/back5.png);
+	background-repeat: repeat;
+	background-size: 10px;
+	text-align: center;
+	/*border: 2px solid var(--red-color);*/
+	outline: 2px solid var(--red-color);
+	outline-offset: -20px;
+}
+
+.price h2 {
+	font-family: 'RussoOne-Regular';
+	font-size: 50px;
+	color: var(--blue-color);
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.price-image {
+	max-height: 250px;
+	padding-bottom: 50%;
+}
+
+.img-popup {
+	display: none;
+	position: fixed;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 90%;
+	z-index: 3;
+}
+
+.image-popup-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vw;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+.image-popup-link:focus + .img-popup {
+	display: block;
+}
+
+.image-popup-link:focus ~ .image-popup-overlay {
+	display: block;
+}
+
+.jobs {
+	color: white;
+	width: 60vw;
+	background-color: var(--blue-color);
+	text-align: center;
+	outline: 2px solid white;
+	outline-offset: -20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.jobs img {
+	max-width: 50%;
+	margin-left: 5%;
+}
+
+.jobs-text-wrap {
+	font-family: sans-serif;
+	font-size: 20px;
+	max-width: 30%;
+	margin-right: 10%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.jobs-text-wrap a {
+	color: var(--blue-color);
+	align-self: center;
+	margin-bottom: 40px;
+}
+
+.jobs-text-wrap h2 {
+	text-transform: uppercase;
+	font-family: 'bighaus-titul';
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+@media screen and (max-width: 1250px) {
+	.jobs {
+		justify-content: center;
+	}
+	.jobs img {
+		display: none;
+	}
+	.jobs-text-wrap {
+		max-width: 80%;
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.price-jobs {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.price {
+		min-width: 270px;
+		width: 80vw;
+	}
+	.jobs {
+		width: 80vw;
+	}
+	.jobs a {
+		margin-bottom: 40px;
+	}
+}
+
+/*Contact us*/
+.contact-us-wrap {
+	background-color: #EAE5DF;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 80px;
+}
+
+.contact-us {
+	max-width: 50vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-us h2 {
+	text-align: center;
+	font-family: 'bighaus-titul';
+	font-size: 80px;
+	line-height: 60px;
+	color: var(--blue-color); 
+	padding-top: 80px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.contact-us h3 {
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 30px;
+	line-height: 40px;
+	color: var(--blue-color); 
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.contact-us p {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: var(--blue-color); 
+	margin-bottom: 40px;
+	margin-top: 0px;
+}
+
+@media screen and (max-width: 600px) {
+	.contact-us h2 {
+		font-size: 15vw;
+	}
+}
+
+/*Social*/
+.social {
+	display: flex;
+	align-items: center;
+	height: 150px;
+}
+
+.social img {
+	max-width: 60px;
+	margin-right: 10px;
+}
+
+.social img:hover {
+	max-width: 80px;
+	transition: 0.5s;
+}
+
+/*Footer*/
+footer {
+	background-color: var(--blue-color);
+	color: white;
+	text-align: center;
+}
+
+footer a {
+	color: white;
+}
+
+.footer-links {
+	font-family: 'RussoOne-Regular';
+	font-size: 15px;
+	padding: 40px 0px 20px 0px;
+	text-transform: uppercase;
+}
+
+.footer-links a {
+	opacity: 0.7;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.footer-links a:hover {
+	opacity: 1;
+}
+
+.footer-info {
+	margin-right: 20px;
+}
+
+.footer-info-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+.footer-info h2 {
+	font-family: 'bighaus-titul';
+}
+
+.phone {
+	margin-bottom: 0px;
+}
+
+.address {
+	margin-bottom: 20px;
+}
+
+.phone {
+	margin-bottom: 0px;
+}
+
+.mail {
+	margin-top: 0px;
+}
+
+.footer-logo {
+	max-height: 300px;
+}
+
+/*Slide-in animation*/
+.come-in {
+  transform: translateY(50%);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}

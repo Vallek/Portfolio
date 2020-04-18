@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Digital agency</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="menu.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-video-wrap">
+			<video class="header-video" height="300px" width="100%" autoplay loop>
+				<source src="Videos/Office6395.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="header-overlay"></div>
+		<div class="top-header">
+			<img class="header-corner-logo" src="Images/logo2.png" alt="Лого">
+			<button class="menu-button" onclick="showMenu()"></button>
+		</div>
+		<div class="header-big-logo-wrap">
+			<img class="header-big-logo" src="Images/biglogo3.png" alt="Большое лого"></img>
+			<button class="our-works-button">Our works</button>
+		</div>
+		<div class="menu-overlay" id="menu-overlay">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Work</a></li>
+					<li><a href="">Lab</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Career</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+	</header>
+	<main>
+		<div class="blog" id="blog-outside">
+			<h2 class="blog-tag" id="blog-outside-tag">Blog</h2>
+			<div class="background-wrap" role="presentation">
+				<div class="blog-back" id="blog-back-1">
+					<span class="back-text">Outside</span>
+				</div>
+				<div class="blog-back" id="blog-back-2">
+					<span class="back-text">Outside</span>
+				</div>
+				<div class="blog-back" id="blog-back-3">
+					<span class="back-text">Outside</span>
+				</div>
+				<div class="blog-back" id="blog-back-4">
+					<span class="back-text">Outside</span>
+				</div>
+			</div>
+			<div class="border-overlay"></div>
+			<div class="places-wrap">
+				<h3 class="blog-title">Best places to work</h3>
+				<div class="places-dates">
+					<ul>
+						<li><a href="">2015</a></li>
+						<li><a href="">2016</a></li>
+						<li><a href="">2017</a></li>
+						<li><a href="">2018</a></li>
+					</ul>
+				</div>
+				<button class="blog-button" id="outside-button">About us</button>
+			</div>
+		</div>
+		<div class="blog" id="work">
+			<div class="blog-overlay-right"></div>
+			<div class="blog-info" id="blog-info-2">
+				<h2 class="work-tag">Work</h2>
+				<h3 class="blog-title">Making every<br> <span class="blog-title-big">summer count</span></h3>
+				<p class="blog-description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nemo eius. Aliquam nam exercitationem sint.
+				</p>
+				<img class="blog-logo" src="Images/love-2935421.svg" alt="Company logo">
+				<button class="blog-button" id="about-us-button">View campaign</button>
+			</div>
+		</div>
+		<div class="blog" id="blog-3">
+			<div class="blog-overlay-left"></div>
+			<div class="blog-info" id="blog-info-3">
+				<h2 class="blog-tag">Blog</h2>
+				<h3 class="blog-title">Your New Way<br> <span class="blog-title-big">Today</span></h3>
+				<p class="blog-description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nemo eius. Aliquam nam exercitationem sint.
+				</p>
+				<img class="blog-logo" src="Images/airbnb-3383993.svg" alt="Company logo">
+				<button class="blog-button" id="about-us-button">Know more</button>
+			</div>
+		</div>
+		<div class="blog" id="blog-4">
+			<div class="blog-overlay-right"></div>
+			<div class="blog-info" id="blog-info-4">
+				<h2 class="blog-tag">Blog</h2>
+				<h3 class="blog-title">How we created our most important project</h3>
+				<span class="blog-date">March 7, 2018</span>
+				<p class="blog-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel rerum ullam similique, doloribus, aliquid, doloremque laboriosam dignissimos hic, necessitatibus quibusdam explicabo quia veniam voluptates sed deserunt tenetur quisquam nulla. Perspiciatis
+				</p>
+				<button class="blog-button" id="about-us-button">Read all</button>
+			</div>
+		</div>
+		<div class="promo-block">
+			<div id="promo-1">
+				<div class="blog-overlay-center"></div>
+				<img class="header-big-logo" src="Images/biglogo3.png" alt="Большое лого"></img>
+			</div>
+			<div id="promo-2">
+				<img class="header-big-logo" src="Images/logo2.png" alt="Большое лого"></img>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer-links">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Work</a></li>
+				<li><a href="">Lab</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Career</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</div>
+		<div class="address-1">
+			<h3>Moscow</h3>
+			<p>5th Street, Suite 500 555-55-55</p>
+		</div>
+		<div class="address-2">
+			<h3>LA</h3>
+			<p>7th Street, Suite 200 555-55-55</p>
+		</div>
+		<div class="footer-mail">
+			<h3>The Brief</h3>
+			<p>Sign up to receive emails with our latest work, musings, news, and open jobs. Never miss a thing.</p>
+			<div class="sign-form"></div>
+			<form>
+				<input type="text" name="email">
+				<button type="submit">Sugn up</button>
+				<p>By signing up, you agree to our <a href="">terms</a>.</p>
+			</form>
+		</div>
+		<div class="footer-social"></div>
+	</footer>
+</body>
+</html>
