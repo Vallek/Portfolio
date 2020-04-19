@@ -1,5 +1,4 @@
 let hovered = document.querySelectorAll('.box-item');
-let page = document.querySelector('.page');
 
 hovered.forEach(
 	function doit(el) {
