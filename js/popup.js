@@ -1,8 +1,5 @@
 let hovered = document.querySelectorAll('.box-item');
 let page = document.querySelector('.page');
-// let boxCalc = getComputedStyle(page).getPropertyValue('--box-item-side').replace('px','');
-// let boxSide = parseInt(boxCalc, 10);
-// let vw = document.documentElement.clientWidth / 100;
 
 hovered.forEach(
 	function doit(el) {
