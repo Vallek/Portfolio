@@ -159,8 +159,12 @@
 	}
 }
 
-.main__side-column {
+.side-column {
 	max-width: 350px;
+}
+
+.side-column__section {
+	margin-bottom: 15px;
 }
 
 .main__section {
