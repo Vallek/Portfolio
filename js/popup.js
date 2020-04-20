@@ -41,7 +41,7 @@ hovered.forEach(
 					target.classList.add('out-of-viewport');
 					target.style.right = boxSide + 'px';
 				}
-				else {
+				else if (target !== null) {
 					target.style.left = null;
 					target.style.right = null;
 					return;
