@@ -305,6 +305,10 @@
 	flex-direction: column;
 }
 
+.video__last-video {
+	border: 0;
+}
+
 /* Skills */
 .skills {
 	max-width: 350px;
