@@ -9,7 +9,7 @@
 	font-size: 16px;
 	padding-top: 1rem;
 	min-height: 100vh;
-    display: flex;
+	display: flex;
     flex-direction: column;
 	--box-item-side: 300px;
 	--box-item-side: clamp(200px, 20vw, 300px);
