@@ -254,12 +254,6 @@
 	width: var(--box-item-side);
 }
 
-@media (max-width: 600px) {
-	.info {
-		width: 270px;
-	}
-}
-
 .box-item_htmlac-work::after {
 	content: attr(title);
 	background-image: url('../img/works/htmlac-logo.png');
