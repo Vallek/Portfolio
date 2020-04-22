@@ -6,6 +6,7 @@ hovered.forEach(
 		let target = el.querySelector('.info');
 		let heading = el.querySelector('.box-item__heading');
 		el.addEventListener('mouseenter', isInViewport);
+		el.addEventListener('mouseleave', isOutViewport);
 		el.addEventListener('mouseenter', onBox);
 		el.addEventListener('mouseleave', outBox);
 
@@ -49,7 +50,6 @@ hovered.forEach(
 			}	
 		}
 		
-		el.addEventListener('mouseleave', isOutViewport);
 		function isOutViewport() {
 			if (target !== null) {
 				target.classList.remove('out-of-viewport');
