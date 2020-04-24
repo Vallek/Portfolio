@@ -201,6 +201,19 @@
 	z-index: 2;
 }
 
+@media (min-width: 965px) and (max-width: 1260px) {
+	.box-item {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 964px) {
+	.box-item {
+		max-width: 100%;
+		min-width: 200px;
+	}
+}
+
 .box-item__frame {
 	height: 100%;
 	overflow: hidden;
