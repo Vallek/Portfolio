@@ -214,6 +214,13 @@
 	}
 }
 
+@media (max-width: 495px) {
+	.box-item {
+		margin-right: 1vw;
+		margin-left: 1vw;
+	}
+}
+
 .box-item__frame {
 	height: 100%;
 	overflow: hidden;
@@ -314,6 +321,12 @@
 
 .video__last-video {
 	border: 0;
+}
+
+@media (max-width: 495px) {
+	.video__last-video {
+		width: 100%;
+	}
 }
 
 /* Skills */
