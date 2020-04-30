@@ -421,8 +421,16 @@
 	height: 500px;
 }
 
+.course-video {
+	min-width: 340px;
+	width: 100%;
+	max-width: 560px;
+}
+
 /*Course List*/
 .course-list {
+	box-sizing: border-box;
+	width: 95%;
 	padding-left: 25px;
 	margin-top: 0px;
 }
