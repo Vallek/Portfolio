@@ -1,14 +1,26 @@
-    var accItem = document.getElementsByClassName('accordionItem');
-    var accHD = document.getElementsByClassName('accordionItemHeading');
-    for (i = 0; i < accHD.length; i++) {
-        accHD[i].addEventListener('click', toggleItem, false);
+let accItem = document.querySelectorAll('.course__item');
+let accHeading = document.querySelectorAll('.course__heading');
+
+accHeading.forEach(
+    function getClick(el) {
+        el.addEventListener('click', toggleItem);
     }
-    function toggleItem() {
-        var itemClass = this.parentNode.className;
-        for (i = 0; i < accItem.length; i++) {
-            accItem[i].className = 'accordionItem close';
-        }
-        if (itemClass == 'accordionItem close') {
-            this.parentNode.className = 'accordionItem open';
-        }
+);
+
+function toggleItem() {
+    let itemClass = this.parentNode.classList;
+    if (itemClass.contains('course__item_open')) {
+        this.parentNode.classList.remove('course__item_open');     
+        this.parentNode.classList.add('course__item_close');     
     }
+    else {
+        accItem.forEach(
+            function closeIt(it) {
+                it.classList.remove('course__item_open');
+                it.classList.add('course__item_close');
+            }
+        );
+        this.parentNode.classList.remove('course__item_close'); 
+        this.parentNode.classList.add('course__item_open'); 
+    }
+}
