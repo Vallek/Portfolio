@@ -15,7 +15,8 @@ hovered.forEach(
 		}
 
 		function outBox() {
-			if (el.classList != "box-item code") {
+			let itsCode = el.classList.contains("code");
+			if (! itsCode) {
 				heading.classList.add('visually-hidden');
 			}
 			else {
