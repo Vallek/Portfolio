@@ -15,7 +15,12 @@ hovered.forEach(
 		}
 
 		function outBox() {
-			heading.classList.add('visually-hidden');
+			if (el.classList != "box-item code") {
+				heading.classList.add('visually-hidden');
+			}
+			else {
+				return;
+			}
 		}
 
 		function isInViewport() {
