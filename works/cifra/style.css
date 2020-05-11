@@ -15,11 +15,14 @@
 }
 
 .main-menu {
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
 	background-color: rgb(255,255,255);
 	text-align: right;
 	font-family: 'RussoOne-Regular';
 	font-size: 25px;
-	line-height: 80px;
+	min-height: 80px;
 }
 
 body {
@@ -82,11 +85,11 @@ body {
 .new-works::after,
 .new-jobs::after {
 	position: relative;
-	font-size: 15px;
+	bottom: 20px;
 	padding: 5px 5px 10px 10px;
+	font-size: 15px;
 	color: rgb(255,255,255);
 	background-color: var(--red-color);
-	bottom: 20px;
 	clip-path: polygon(29% 0px, 100% 0%, 100% 79%, 36% 79%, 0px 100%, 29% 66%);
 }
 
