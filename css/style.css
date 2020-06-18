@@ -252,6 +252,7 @@
 }
 
 .box-item__heading {
+	color: black;
 	font-weight: 400;
 	position: absolute;
 	top: 0;
