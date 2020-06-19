@@ -251,6 +251,10 @@
 	transition: 0.2s ease-in;
 }
 
+.box-item__image_yellow {
+	background-color: #f7cb1d;
+}
+
 .box-item__heading {
 	color: black;
 	font-weight: 400;
