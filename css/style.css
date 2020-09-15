@@ -251,8 +251,12 @@
 	transition: 0.2s ease-in;
 }
 
-.box-item__image_yellow {
+.box-item__image_html {
 	background-color: #f7cb1d;
+}
+
+.box-item__image_mistakes {
+	background-color: #e8bc2b;
 }
 
 .box-item__heading {
