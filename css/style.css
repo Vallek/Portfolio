@@ -23,7 +23,7 @@
 	justify-content: space-between;
 	margin: 0 auto 25px ;
 	width: 100%;
-	padding: 0 2%;
+	padding: 0 2vw;
 }
 
 @media (max-width: 900px) {
@@ -148,7 +148,7 @@
 	box-sizing: border-box;
 	display: flex;
 	width: 100%;
-	padding: 0 2%;
+	padding: 0 2vw;
 	flex-grow: 1;
 	justify-content: space-between;
 }
@@ -387,7 +387,7 @@
 .footer {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 0 2%;
+	padding: 20px 2vw;
 	text-align: center;
 }
 
