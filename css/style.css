@@ -442,6 +442,10 @@ h1 {
 }
 
 /*Course List*/
+.lectures {
+	list-style: none;
+}
+
 .course-list {
 	box-sizing: border-box;
 	width: 95%;
@@ -450,6 +454,8 @@ h1 {
 }
 
 .course__content {
+	display: block;
+	max-width: 90%;
 	margin-bottom: 20px;
 }
 
