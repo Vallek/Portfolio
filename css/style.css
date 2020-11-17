@@ -400,10 +400,12 @@ h1 {
 }
 
 .attribution {
+	font-size: 13px;
 	color: rgb(118, 118, 118);
 }
 
 .attribution__link {
+	font-size: 13px;
 	color: rgb(118, 118, 118);
 	text-decoration: none;
 }
