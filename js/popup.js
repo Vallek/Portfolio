@@ -5,17 +5,22 @@ hovered.forEach(
 		
 		let target = el.querySelector('.info');
 		let heading = el.querySelector('.box-item__heading');
+		let itsCode = el.classList.contains("always-show");
 		el.addEventListener('mouseenter', isInViewport);
 		el.addEventListener('mouseleave', isOutViewport);
 		el.addEventListener('mouseenter', onBox);
 		el.addEventListener('mouseleave', outBox);
 
 		function onBox() {
-			heading.classList.remove('visually-hidden');
+			if (! itsCode) {
+				heading.classList.remove('visually-hidden');
+			}
+			else {
+				return;
+			}
 		}
 
 		function outBox() {
-			let itsCode = el.classList.contains("code");
 			if (! itsCode) {
 				heading.classList.add('visually-hidden');
 			}
