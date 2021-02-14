@@ -263,6 +263,14 @@ h1 {
 	background-color: #e8bc2b;
 }
 
+.box-item__image_git {
+	object-fit: contain;
+}
+
+.box-item__image_bem {
+	background-color: #f5ce35;
+}
+
 .box-item__heading {
 	color: black;
 	font-weight: 400;
@@ -429,6 +437,23 @@ h1 {
 	max-width: 80ch;
 }
 
+.page__section > .sign-up-big {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.crumbs-link {
+	display: inline-block;
+	color: rgb(115, 115, 115);
+	text-decoration: none;
+	margin-bottom: 0.5em;
+}
+
+.crumbs-link:hover {
+	color: black;
+	text-decoration: underline;
+}
+
 /* Course */
 .pdf-doc {
 	min-width: 350px;
@@ -499,6 +524,15 @@ h1 {
 
 .lesson-images > img {
 	height: 150px;
+}
+
+/* Lecture Sign Up */
+.sign-up-link {
+	text-decoration: none;
+	display: inline-block;
+	padding: 1em 2em;
+	color: white;
+	background-color: var(--accent-color);
 }
 
 /* JS */
