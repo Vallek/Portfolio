@@ -526,6 +526,15 @@ h1 {
 	height: 150px;
 }
 
+.course__sign-up {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 1em;
+	padding: 0.5em 1em;
+	background-color: var(--accent-color);
+}
+
 /* Lecture Sign Up */
 .sign-up-link {
 	text-decoration: none;
