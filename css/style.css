@@ -541,7 +541,23 @@ h1 {
 	display: inline-block;
 	padding: 1em 2em;
 	color: white;
-	background-color: var(--accent-color);
+	background-image: linear-gradient(0.70turn, var(--accent-color), #f2f1f0, var(--accent-color));
+	background-size: 400% 400%;
+	background-position: 0% 50%;
+
+}
+
+.sign-up-link:hover {
+	animation: gradient 5s ease;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 200% 50%;
+	}
 }
 
 /* JS */
