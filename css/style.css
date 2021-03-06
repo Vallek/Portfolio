@@ -69,8 +69,9 @@
 }
 
 .header__title {
-	font-size: 34px;
-	font-weight: 400;
+	font-family: 'Brygada 1918';
+	font-weight: 700;
+	font-size: 46px;
 	margin: 0;
 }
 
