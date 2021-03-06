@@ -1,8 +1,21 @@
 @font-face {
-	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
 	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), 
+		url('../fonts/open-sans-v18-latin_cyrillic-regular.woff2') format('woff2'),
+		url('../fonts/open-sans-v18-latin_cyrillic-regular.woff') format('woff');
 }
 
+@font-face {
+	font-family: 'Brygada 1918';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Brygada 1918'),
+		url('../fonts/brygada-1918-v1-latin_cyrillic-700.woff2') format('woff2'),
+		url('../fonts/brygada-1918-v1-latin_cyrillic-700.woff') format('woff');
+}
+  
 .home {
 	line-height: initial;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -56,8 +69,11 @@
 }
 
 .header__title {
-	font-size: 34px;
-	font-weight: 400;
+	color: #442010;
+	font-family: 'Brygada 1918';
+	font-weight: 700;
+	font-size: 46px;
+	line-height: 1.1;
 	margin: 0;
 }
 
@@ -541,7 +557,23 @@ h1 {
 	display: inline-block;
 	padding: 1em 2em;
 	color: white;
-	background-color: var(--accent-color);
+	background-image: linear-gradient(0.70turn, var(--accent-color), #f2f1f0, var(--accent-color));
+	background-size: 400% 400%;
+	background-position: 0% 50%;
+
+}
+
+.sign-up-link:hover {
+	animation: gradient 5s ease;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 200% 50%;
+	}
 }
 
 /* JS */
