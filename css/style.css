@@ -193,6 +193,10 @@ h1 {
 	margin-bottom: 15px;
 }
 
+.last-posts {
+	border: none;	
+}
+
 .main__section {
 	display: flex;
 	flex-wrap: wrap;
