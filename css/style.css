@@ -458,7 +458,8 @@ h1 {
 	outline: 1px solid #e2e2e2;
 }
 
-.page__section > p {
+.page__section > p,
+.main-text {
 	font-size: 18px;
 	max-width: 80ch;
 }
