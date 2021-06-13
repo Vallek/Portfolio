@@ -211,6 +211,33 @@ h1 {
 	margin-bottom: 20px;
 }
 
+.consult__heading::after
+ {
+	content: ' 💬';
+	margin-left: 10px;
+	visibility: hidden;
+	display: inline-block;
+}
+
+.consult:hover .consult__heading::after
+ {
+	content: ' 💬';
+	visibility: visible;
+	animation: shake-it 0.1s linear 2 alternate;
+}
+
+@keyframes shake-it {
+	0% {
+		transform: translateX(5px);
+	}
+	50% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(-5px);
+	}
+}
+
 /* Box items */
 .box-item {
 	display: flex;
