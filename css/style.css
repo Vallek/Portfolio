@@ -323,6 +323,11 @@ h1 {
 	background-color: #f5ce35;
 }
 
+.box-item__image_anim {
+	object-fit: contain;
+	background-color: #d99e56;
+}
+
 .box-item__heading {
 	color: black;
 	font-weight: 400;
