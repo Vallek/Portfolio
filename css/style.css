@@ -512,6 +512,19 @@ h1 {
 	text-decoration: underline;
 }
 
+.page__places-list {
+	font-size: 18px;
+}
+
+.places-list__place {
+	display: inline-block;
+}
+
+.places-list__sum {
+	margin-left: 0;
+	display: inline-block;
+}
+
 /* Course */
 .pdf-doc {
 	min-width: 350px;
