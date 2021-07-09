@@ -425,6 +425,16 @@ h1 {
 	text-decoration: none;
 }
 
+.skills__skill {
+	color: rgb(36, 36, 36);
+	display: inline-block;
+	border-radius: 5px;
+	margin: 2px 0;
+	padding: 3px;
+	border: 1px solid rgb(184, 184, 184);
+	border-radius: 5px;
+}
+
 .skills__skill_reveal {
 	background-position: right bottom;
 }
@@ -440,16 +450,6 @@ h1 {
 .skills__list:hover > .skills__skill_reveal > .skills__link {
 	color: #fff;
 	transition: 0.2s ease-in;
-}
-
-.skills__skill {
-	color: rgb(36, 36, 36);
-	display: inline-block;
-	border-radius: 5px;
-	margin: 2px 0;
-	padding: 3px;
-	border: 1px solid rgb(184, 184, 184);
-	border-radius: 5px;
 }
 
 /* Footer */
