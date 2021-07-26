@@ -200,8 +200,20 @@ h1 {
 .main__section {
 	display: flex;
 	flex-wrap: wrap;
-	/* margin-right: -1rem; */
 	margin-bottom: 30px;
+}
+
+@supports (gap: 1em) {
+	.main__section {
+		gap: 2rem;
+		margin-right: 2rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.main__section {
+		margin-right: 0;
+	}
 }
 
 .section__heading {
@@ -209,6 +221,12 @@ h1 {
 	width: 100%;
 	margin-top: 0;
 	margin-bottom: 20px;
+}
+
+@supports (gap: 1em) {
+	.main__heading {
+		margin-bottom: -20px;
+	}
 }
 
 .consult__heading::after
@@ -251,6 +269,13 @@ h1 {
 	margin-right: 2rem;
 	margin-bottom: 2rem;
 	outline: 1px solid #e2e2e2;
+}
+
+@supports (gap: 1em) {
+	.box-item  {
+		margin-right: 0;
+		margin-bottom: 0;
+	}
 }
 
 .box-item:hover {
