@@ -332,6 +332,10 @@ h1 {
 	transition: 0.2s ease-in;
 }
 
+.box-item__image_ipap {
+	object-fit: contain;
+}
+
 .box-item__image_html {
 	background-color: #f7cb1d;
 }
