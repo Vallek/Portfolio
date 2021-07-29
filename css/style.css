@@ -233,6 +233,15 @@ h1 {
 	}
 }
 
+.section__link {
+	color: #000;
+	text-decoration: none;
+}
+
+.section__link:hover {
+	text-decoration: underline;
+}
+
 .consult__heading::after
  {
 	content: ' 💬';
