@@ -528,6 +528,15 @@ h1 {
 	flex-grow: 1;
 }
 
+.page__link {
+	color: #000;
+	text-decoration: none;
+}
+
+.page__link:hover {
+	text-decoration: underline;
+}
+
 .page__illustration {
 	min-width: 350px;
 	width: 80%;
@@ -537,6 +546,7 @@ h1 {
 }
 
 .page__section > p,
+.page-text,
 .main-text {
 	font-size: 18px;
 	max-width: 80ch;
