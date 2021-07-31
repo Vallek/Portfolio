@@ -722,8 +722,6 @@ h1 {
 .out-of-viewport {
 	position: absolute;
 	visibility: visible;
-	/* right: 300px; */
-    /* transform: translateX(calc(-1 * var(--box-item-side))); */
 	z-index: 1;
 	transition: right 0.2s ease-in,
 	z-index 0.1s ease-in 0.2s;
@@ -733,8 +731,6 @@ h1 {
 .inside-viewport {
 	position: absolute;
 	visibility: visible;
-	/* left: 300px; */
-	/* transform: translateX(var(--box-item-side)); */
 	z-index: 1;
 	transition: left 0.2s ease-in,
 	z-index 0.1s ease-in 0.2s;
