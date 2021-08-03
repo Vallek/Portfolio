@@ -93,13 +93,12 @@
 	margin: 0;
 }
 
-.header__about-me > .header__important {
+.header__important {
 	font-weight: 400;
 	position: relative;
-	
 }
 
-.header__about-me > .header__important_reveal {
+.header__important_reveal {
 	background-position: right bottom;
 }
 
@@ -233,12 +232,12 @@ h1 {
 	}
 }
 
-.section__link {
+.anchor-link {
 	color: #000;
 	text-decoration: none;
 }
 
-.section__link:hover::after {
+.anchor-link:hover::after {
 	content: ' #';
 	color: rgba(0,0,0,0.5);
 }
@@ -529,16 +528,6 @@ h1 {
 	flex-grow: 1;
 }
 
-.page__link {
-	color: #000;
-	text-decoration: none;
-}
-
-.page__link:hover::after {
-	content: ' #';
-	color: rgba(0,0,0,0.5);
-}
-
 .page__illustration {
 	min-width: 350px;
 	width: 80%;
@@ -547,9 +536,7 @@ h1 {
 	outline: 1px solid #e2e2e2;
 }
 
-.page__section > p,
-.page-text,
-.main-text {
+.page__section > p {
 	font-size: 18px;
 	max-width: 80ch;
 }
@@ -557,6 +544,8 @@ h1 {
 .points-list {
 	list-style: none;
 	padding-left: 0;
+	font-size: 18px;
+	max-width: 80ch;
 }
 
 .points-list__point {
