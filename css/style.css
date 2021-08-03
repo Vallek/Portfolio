@@ -93,13 +93,12 @@
 	margin: 0;
 }
 
-.header__about-me > .header__important {
+.header__important {
 	font-weight: 400;
 	position: relative;
-	
 }
 
-.header__about-me > .header__important_reveal {
+.header__important_reveal {
 	background-position: right bottom;
 }
 
@@ -547,9 +546,7 @@ h1 {
 	outline: 1px solid #e2e2e2;
 }
 
-.page__section > p,
-.page-text,
-.main-text {
+.page__section > p {
 	font-size: 18px;
 	max-width: 80ch;
 }
@@ -557,6 +554,8 @@ h1 {
 .points-list {
 	list-style: none;
 	padding-left: 0;
+	font-size: 18px;
+	max-width: 80ch;
 }
 
 .points-list__point {
