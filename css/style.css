@@ -650,8 +650,6 @@ h1 {
     margin:0px 0px 10px 0px;
     padding:10px;
     border: 1px solid #C0C0C0;
-    -webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
 	border-radius: 3px;
     box-sizing: border-box;
 	word-wrap: break-word;
@@ -660,9 +658,6 @@ h1 {
 .course__item_close > .course__content {
     height:0px;
     transition:height 1s ease-out;
-    -webkit-transform: scaleY(0);
-	-o-transform: scaleY(0);
-	-ms-transform: scaleY(0);
 	transform: scaleY(0);
 	display: none;
 }
