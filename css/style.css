@@ -417,6 +417,8 @@ h1 {
 .job__text {
 	margin-top: 0;
 	margin-bottom: 1rem;
+	font-size: 18px;
+	max-width: 80ch;
 }
 
 .info__list {
@@ -536,7 +538,7 @@ h1 {
 	outline: 1px solid #e2e2e2;
 }
 
-.page__section > p {
+.page__text {
 	font-size: 18px;
 	max-width: 80ch;
 }
@@ -575,7 +577,7 @@ h1 {
 	padding-left: 1em;
 }
 
-.page__section > .sign-up-big {
+.sign-up-big {
 	font-size: 1.5em;
 	font-weight: bold;
 }
