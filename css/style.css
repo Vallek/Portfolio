@@ -670,7 +670,7 @@ h1 {
 	content: " \25B2";
 }
 
-.lesson-images > img {
+.course__image {
 	height: 150px;
 }
 
