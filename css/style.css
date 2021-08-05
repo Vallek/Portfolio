@@ -118,7 +118,7 @@ a:focus {
 }
 
 .header__about-me:hover > .header__important_reveal {
-	background-image: linear-gradient(to right, var(--accent-color) 50%, rgb(255, 255, 255, 0.5) 50%);
+	background-image: linear-gradient(to right, var(--accent-color) 50%, rgba(255, 255, 255, 0.5) 50%);
 	background-size: 200% 100%;
 	background-position: left bottom;
 	transition: 0.2s ease-in;
