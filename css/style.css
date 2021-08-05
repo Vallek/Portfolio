@@ -219,13 +219,7 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 30px;
-}
-
-@supports (gap: 1em) {
-	.main__section {
-		gap: 2rem;
-		margin-right: 2rem;
-	}
+	margin-right: 2rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -241,12 +235,6 @@ h1 {
 	margin-bottom: 20px;
 }
 
-@supports (gap: 1em) {
-	.main__heading {
-		margin-bottom: -20px;
-	}
-}
-
 .anchor-link {
 	color: #000;
 	text-decoration: none;
@@ -258,6 +246,18 @@ h1 {
 }
 
 /* Box items */
+.section__items {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@supports (gap: 1em) {
+	.section__items {
+		gap: 2rem;	
+	}
+}
+
+
 .box-item {
 	display: flex;
 	flex-direction: column;
