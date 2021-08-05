@@ -92,6 +92,16 @@ a:focus {
 	margin: 0;
 }
 
+.header__name {
+	white-space: pre;
+}
+
+@media screen and (max-width: 370px) {
+	.header__name {
+		white-space: normal;
+	}
+}
+
 .header__about-me {
 	font-size: 20px;
 	max-width: 80ch;
