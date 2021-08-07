@@ -668,6 +668,11 @@ a:focus {
 	word-wrap: break-word;
 }
 
+.course__heading:focus {
+	outline: 3px dashed;
+	outline-offset: 2px;
+}
+
 .course__item_close > .course__content {
     height: 0px;
     transition: height 1s ease-out;
