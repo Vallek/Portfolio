@@ -58,7 +58,7 @@ header {
 }
 
 /* Header - Heading */
-.page-heading {
+.page__heading {
     font-size: calc(60px + 1vw);
     text-align: center;
     margin: 0px;
@@ -70,7 +70,7 @@ header {
     z-index: 2;
 }
 
-.page-heading .text-style {
+.page__heading .text-style {
     background: linear-gradient(90deg, rgb(194, 130, 224), rgb(232, 152, 248), rgb(130, 88, 230), rgb(69, 142, 252));
     -webkit-background-clip: text;
     background-clip: text;
