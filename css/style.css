@@ -17,7 +17,13 @@
 		url('../fonts/brygada-1918-v1-latin_cyrillic-700.woff') format('woff');
 	font-display: swap;
 }
-  
+
+:root {
+	--box-item-side: 300px;
+	--box-item-side: clamp(200px, 20vw, 300px);
+	--accent-color: rgb(240, 104, 41);
+}
+
 .home {
 	line-height: initial;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -28,9 +34,6 @@
 	min-height: 100vh;
 	display: flex;
     flex-direction: column;
-	--box-item-side: 300px;
-	--box-item-side: clamp(200px, 20vw, 300px);
-	--accent-color: rgb(240, 104, 41);
 }
 
 a:focus {
