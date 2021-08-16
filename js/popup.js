@@ -31,9 +31,9 @@ hovered.forEach(
 
 		function isInViewport() {
 			let boxSide = el.offsetWidth;
-			let rightSide = window.innerWidth - el.getBoundingClientRect().right;
-			let leftSide = el.getBoundingClientRect().left;
 			let viewportWidth = window.innerWidth;
+			let rightSide = viewportWidth - el.getBoundingClientRect().right;
+			let leftSide = el.getBoundingClientRect().left;
 			if (
 				target !== null &&
 				rightSide >= boxSide &&
