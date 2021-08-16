@@ -1,7 +1,7 @@
-let hovered = document.querySelectorAll('.box-item');
+let boxItems = document.querySelectorAll('.box-item');
 
-hovered.forEach(
-	function doit(el) {
+boxItems.forEach(
+	function changeOnHover(el) {
 		
 		let target = el.querySelector('.info');
 		let heading = el.querySelector('.box-item__heading');
