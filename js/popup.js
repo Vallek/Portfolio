@@ -21,16 +21,13 @@ boxItems.forEach(
 
 		// Hide popups on self hover
 		if (infoPopup !== null) {
-			let removeIt = function remove() {	
-				infoPopup.classList.add('visually-hidden');	
-				infoPopup.style.left = null;
-				infoPopup.style.right = null;
-			};
 			infoPopup.addEventListener('mouseover', removeIt);
 		}
-		else {
-			return;
-		}	
+		function removeIt() {	
+			infoPopup.classList.add('visually-hidden');	
+			infoPopup.style.left = null;
+			infoPopup.style.right = null;
+		}
 
 		// Show heading on items links focus
 		let boxLink = el.querySelector('.box-item__image-link');
