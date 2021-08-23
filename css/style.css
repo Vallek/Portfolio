@@ -236,6 +236,7 @@ a:focus {
 	margin-bottom: 30px;
 	margin-right: 2rem;
 	grid-column: 1 / 2;
+	align-content: start;
 }
 
 .main__section:not(:first-child) {
