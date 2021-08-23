@@ -313,12 +313,6 @@ a:focus {
 	z-index: 2;
 }
 
-@media (min-width: 965px) and (max-width: 1260px) {
-	.box-item {
-		max-width: 100%;
-	}
-}
-
 @media (max-width: 964px) {
 	.box-item {
 		max-width: 100%;
