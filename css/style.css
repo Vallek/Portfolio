@@ -330,11 +330,11 @@ a:focus {
 .job_current::after {
 	content: 'Сейчас';
 	display: inline-block;
-	padding: 5px;
+	padding: 3px 5px;
 	position: absolute;
 	top: -0.5em;
 	right: 0;
-	transform: translateX(20%) skew(0, -2deg);
+	transform: translateX(1vw) skew(0, -2deg);
 	color: white;
 	font-weight: 700;
 	text-transform: uppercase;
