@@ -11,9 +11,11 @@ boxItems.forEach(
 		let heading = el.querySelector('.box-item__heading');
 		let itsCode = el.classList.contains("always-show");
 
-		// Show/hide popups on hover 
+		// Show/hide popups on hover and focus
 		el.addEventListener('mouseenter', showPopup);
 		el.addEventListener('mouseleave', hidePopup);
+		el.addEventListener('focusin', showPopup);
+		el.addEventListener('focusout', hidePopup);
 
 		// Show/hide headings on hover
 		el.addEventListener('mouseenter', onBox);
@@ -67,6 +69,7 @@ boxItems.forEach(
 
 		// Shows popups
 		function showPopup() {
+			el.style.zIndex = '2';
 			let boxSide = el.offsetWidth;
 			let viewportWidth = window.innerWidth;
 			let rightSide = viewportWidth - el.getBoundingClientRect().right;
@@ -100,6 +103,7 @@ boxItems.forEach(
 		
 		// Hides popups
 		function hidePopup() {
+			el.style.zIndex = null;
 			if (infoPopup !== null) {
 				infoPopup.classList.remove('out-of-viewport');
 				infoPopup.classList.remove('inside-viewport');
