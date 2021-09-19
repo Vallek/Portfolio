@@ -218,7 +218,7 @@ a:focus {
 @media (max-width: 900px) {
 	.side-column {
 		max-width: 100%;
-		grid-column: initial;
+		grid-column: 1;
 		grid-row: initial;
 		justify-self: start;
 	}
@@ -439,7 +439,8 @@ a:focus {
 	padding: 1rem 1rem 0;
 	box-shadow: 5px 3px 10px -3px rgb(56, 56, 56);
 	background-color: #fff;
-	width: var(--box-item-side);
+	width: auto;
+	max-width: 300px;
 }
 
 .box-item_htmlac-work::after {
@@ -799,7 +800,7 @@ a:focus {
 	position: absolute;
 	visibility: visible;
 	z-index: 1;
-	transition: right 0.2s ease-in,
+	transition: transform 0.2s ease-in,
 	z-index 0.1s ease-in 0.2s;
 	box-shadow: -5px 3px 10px -3px rgb(56, 56, 56);
 }
@@ -808,6 +809,6 @@ a:focus {
 	position: absolute;
 	visibility: visible;
 	z-index: 1;
-	transition: left 0.2s ease-in,
+	transition: transform 0.2s ease-in,
 	z-index 0.1s ease-in 0.2s;
 }
