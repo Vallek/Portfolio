@@ -27,8 +27,8 @@ boxItems.forEach(
 		}
 		function removeIt() {	
 			infoPopup.classList.add('visually-hidden');	
-			infoPopup.style.left = null;
-			infoPopup.style.right = null;
+			infoPopup.style.transform = null;
+			infoPopup.style.transform = null;
 		}
 
 		// Show heading on items links focus
@@ -76,26 +76,26 @@ boxItems.forEach(
 			let leftSide = el.getBoundingClientRect().left;
 			if (
 				infoPopup !== null &&
-				rightSide >= boxSide &&
+				rightSide >= 300 &&
 				viewportWidth >= 800
 			) {
 				infoPopup.classList.remove('visually-hidden');
 				infoPopup.classList.add('inside-viewport');
-				infoPopup.style.left = boxSide + 'px';
+				infoPopup.style.transform = 'translate(' + boxSide + 'px)';
 			}
 			else {
 				if (
 					infoPopup !== null &&
-					leftSide >= boxSide &&
+					leftSide >= 300 &&
 					viewportWidth >= 800
 					) {
 					infoPopup.classList.remove('visually-hidden');
 					infoPopup.classList.add('out-of-viewport');
-					infoPopup.style.right = boxSide + 'px';
+					infoPopup.style.transform = 'translate(-' + boxSide + 'px)';
 				}
 				else if (infoPopup !== null) {
-					infoPopup.style.left = null;
-					infoPopup.style.right = null;
+					infoPopup.style.transform = null;
+					infoPopup.style.transform = null;
 					return;
 				} 
 			}	
@@ -107,8 +107,8 @@ boxItems.forEach(
 			if (infoPopup !== null) {
 				infoPopup.classList.remove('out-of-viewport');
 				infoPopup.classList.remove('inside-viewport');
-				infoPopup.style.left = null;
-				infoPopup.style.right = null;
+				infoPopup.style.transform = null;
+				infoPopup.style.transform = null;
 				infoPopup.classList.add('visually-hidden');
 			}
 			else {
