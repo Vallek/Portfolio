@@ -217,8 +217,9 @@ a:focus {
 @media (max-width: 900px) {
 	.side-column {
 		max-width: 100%;
-		grid-column: initial;
+		grid-column: 1;
 		grid-row: initial;
+		justify-self: start;
 	}
 }
 
