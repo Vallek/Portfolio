@@ -95,7 +95,6 @@ boxItems.forEach(
 				}
 				else if (infoPopup !== null) {
 					infoPopup.style.transform = null;
-					infoPopup.style.transform = null;
 					return;
 				} 
 			}	
@@ -107,7 +106,6 @@ boxItems.forEach(
 			if (infoPopup !== null) {
 				infoPopup.classList.remove('out-of-viewport');
 				infoPopup.classList.remove('inside-viewport');
-				infoPopup.style.transform = null;
 				infoPopup.style.transform = null;
 				infoPopup.classList.add('visually-hidden');
 			}
