@@ -325,13 +325,6 @@ a:focus {
 	}
 }
 
-@media (max-width: 495px) {
-	.box-item {
-		margin-right: 1vw;
-		margin-left: 1vw;
-	}
-}
-
 .job_current::after {
 	content: 'Сейчас';
 	display: inline-block;
