@@ -426,7 +426,6 @@ a:focus {
 
 .info {
 	display: block;
-	visibility: hidden;
 	position: absolute;
 	z-index: 0;
 	padding: 1rem 1rem 0;
