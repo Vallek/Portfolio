@@ -76,19 +76,19 @@ boxItems.forEach(
 			if (
 				infoPopup !== null &&
 				rightSide >= 320 
-				) {
-					let boxSide = el.offsetWidth;
-					infoPopup.classList.remove('visually-hidden');
-					infoPopup.classList.add('inside-viewport');
-					infoPopup.style.transform = 'translate(' + boxSide + 'px)';
+			) {
+				let boxSide = el.offsetWidth;
+				infoPopup.classList.remove('visually-hidden');
+				infoPopup.classList.add('inside-viewport');
+				infoPopup.style.transform = 'translate(' + boxSide + 'px)';
 			}
 			else if (
 				infoPopup !== null &&
 				leftSide >= 320 
-				) {
-					infoPopup.classList.remove('visually-hidden');
-					infoPopup.classList.add('out-of-viewport');
-					infoPopup.style.transform = 'translate(-100%)';
+			) {
+				infoPopup.classList.remove('visually-hidden');
+				infoPopup.classList.add('out-of-viewport');
+				infoPopup.style.transform = 'translate(-100%)';
 			}
 			else if (infoPopup !== null) {
 				infoPopup.style.transform = null;
