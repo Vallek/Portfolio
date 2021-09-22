@@ -82,6 +82,7 @@ boxItems.forEach(
 				infoPopup.classList.remove('visually-hidden');
 				infoPopup.classList.add('inside-viewport');
 				infoPopup.style.transform = 'translate(' + boxSide + 'px)';
+				infoPopup.style.width = 'max-content';
 			}
 			else {
 				if (
