@@ -70,8 +70,6 @@ boxItems.forEach(
 		// Shows popups
 		function showPopup() {
 			el.style.zIndex = '2';
-			let boxSide = el.offsetWidth;
-			console.log(boxSide);
 			let viewportWidth = window.innerWidth;
 			let rightSide = viewportWidth - el.getBoundingClientRect().right;
 			let leftSide = el.getBoundingClientRect().left;
@@ -79,27 +77,26 @@ boxItems.forEach(
 				infoPopup !== null &&
 				rightSide >= 300 &&
 				viewportWidth >= 800
-			) {
-				infoPopup.classList.remove('visually-hidden');
-				infoPopup.classList.add('inside-viewport');
-				infoPopup.style.transform = 'translate(' + boxSide + 'px)';
+				) {
+					let boxSide = el.offsetWidth;
+					infoPopup.classList.remove('visually-hidden');
+					infoPopup.classList.add('inside-viewport');
+					infoPopup.style.transform = 'translate(' + boxSide + 'px)';
 			}
-			else {
-				if (
-					infoPopup !== null &&
-					leftSide >= 300 &&
-					viewportWidth >= 800
-					) {
+			else if (
+				infoPopup !== null &&
+				leftSide >= 300 &&
+				viewportWidth >= 800
+				) {
 					infoPopup.classList.remove('visually-hidden');
 					infoPopup.classList.add('out-of-viewport');
 					infoPopup.style.transform = 'translate(-100%)';
-				}
-				else if (infoPopup !== null) {
-					infoPopup.style.transform = null;
-					return;
-				} 
-			}	
-		}
+			}
+			else if (infoPopup !== null) {
+				infoPopup.style.transform = null;
+				return;
+			} 
+		}	
 		
 		// Hides popups
 		function hidePopup() {
