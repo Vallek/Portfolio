@@ -433,6 +433,7 @@ a:focus {
 	box-shadow: 5px 3px 10px -3px rgb(56, 56, 56);
 	background-color: #fff;
 	width: auto;
+	width: max-content;
 	max-width: 300px;
 }
 
