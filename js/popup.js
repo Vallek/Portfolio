@@ -71,6 +71,7 @@ boxItems.forEach(
 		function showPopup() {
 			el.style.zIndex = '2';
 			let boxSide = el.offsetWidth;
+			console.log(boxSide);
 			let viewportWidth = window.innerWidth;
 			let rightSide = viewportWidth - el.getBoundingClientRect().right;
 			let leftSide = el.getBoundingClientRect().left;
@@ -82,7 +83,6 @@ boxItems.forEach(
 				infoPopup.classList.remove('visually-hidden');
 				infoPopup.classList.add('inside-viewport');
 				infoPopup.style.transform = 'translate(' + boxSide + 'px)';
-				infoPopup.style.width = 'max-content';
 			}
 			else {
 				if (
@@ -92,7 +92,7 @@ boxItems.forEach(
 					) {
 					infoPopup.classList.remove('visually-hidden');
 					infoPopup.classList.add('out-of-viewport');
-					infoPopup.style.transform = 'translate(-' + boxSide + 'px)';
+					infoPopup.style.transform = 'translate(-100%)';
 				}
 				else if (infoPopup !== null) {
 					infoPopup.style.transform = null;

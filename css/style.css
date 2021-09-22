@@ -425,6 +425,7 @@ a:focus {
 }
 
 .info {
+	box-sizing: border-box;
 	display: block;
 	position: absolute;
 	z-index: 0;
@@ -432,6 +433,7 @@ a:focus {
 	box-shadow: 5px 3px 10px -3px rgb(56, 56, 56);
 	background-color: #fff;
 	width: auto;
+	width: max-content;
 	max-width: 300px;
 }
 
@@ -777,6 +779,7 @@ a:focus {
 
 /* JS */
 .visually-hidden {
+	visibility: hidden;
 	border: 0;
 	clip: rect(0 0 0 0);
 	height: 1px;
@@ -784,7 +787,6 @@ a:focus {
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
-	width: 1px;
 	left: 0;
 }
 
