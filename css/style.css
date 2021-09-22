@@ -425,7 +425,6 @@ a:focus {
 }
 
 .info {
-	box-sizing: border-box;
 	display: block;
 	position: absolute;
 	z-index: 0;
