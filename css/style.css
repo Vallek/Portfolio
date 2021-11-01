@@ -805,3 +805,16 @@ a:focus {
 	transition: transform 0.2s ease-in,
 	z-index 0.1s ease-in 0.2s;
 }
+
+/* No sign up mode */
+/* .sign-up-big {
+	display: none;
+} */
+
+/* .course__sign-up {
+	display: none;
+} */
+
+/* .consult {
+	display: none;
+} */
