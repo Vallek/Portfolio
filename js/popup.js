@@ -13,7 +13,7 @@ boxItems.forEach(
 
 		// Show/hide popups on hover and focus
 		el.addEventListener('mouseenter', showPopup);
-		el.addEventListener('mouseenter', clearFocus);
+		// el.addEventListener('mouseenter', clearFocus);
 		el.addEventListener('mouseleave', hidePopup);
 		el.addEventListener('focusin', showPopup);
 		el.addEventListener('focusout', hidePopup);
@@ -114,7 +114,6 @@ boxItems.forEach(
 		// CLear focus
 		function clearFocus() {
 			boxLink.focus();
-			boxLink.blur();
 		}
 	}
 );
