@@ -19,8 +19,6 @@
 }
 
 :root {
-	--box-item-side: 300px;
-	--box-item-side: clamp(200px, 20vw, 300px);
 	--accent-color: rgb(240, 104, 41);
 }
 
