@@ -417,7 +417,7 @@ a:focus {
 	top: 0;
 	z-index: 2;
 	background-color: #fff;
-	padding: 0 5px;
+	padding: 5px 5px;
 }
 
 .box-item__heading-link {
