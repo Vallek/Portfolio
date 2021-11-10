@@ -1,6 +1,8 @@
 // Get items
 let boxItems = document.querySelectorAll('.box-item');
 
+
+
 boxItems.forEach(
 	function changeOnHover(el) {
 
@@ -15,6 +17,7 @@ boxItems.forEach(
 		el.addEventListener('mouseenter', showPopup);
 		el.addEventListener('mouseleave', hidePopup);
 		el.addEventListener('focusin', showPopup);
+		el.addEventListener('focusin', zIndexUp);
 		el.addEventListener('focusout', hidePopup);
 
 		// Show/hide headings on hover
@@ -69,7 +72,7 @@ boxItems.forEach(
 
 		// Shows popups
 		function showPopup() {
-			el.style.zIndex = '2';
+			el.style.zIndex = '3';
 			let viewportWidth = window.innerWidth;
 			let rightSide = viewportWidth - el.getBoundingClientRect().right;
 			let leftSide = el.getBoundingClientRect().left;
@@ -109,5 +112,10 @@ boxItems.forEach(
 				return;
 			} 
 		}
+
+		function zIndexUp() {
+			el.style.zIndex = 2;
+		}
+
 	}
 );

@@ -312,10 +312,6 @@ a:focus {
 	}
 }
 
-.box-item:hover {
-	z-index: 2;
-}
-
 @media (max-width: 972px) {
 	.box-item {
 		max-width: 100%;
