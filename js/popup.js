@@ -1,17 +1,15 @@
 // Get items
 let boxItems = document.querySelectorAll('.box-item');
 
-
-
 boxItems.forEach(
-	function changeOnHover(el) {
+	function itemsInfo(el) {
 
 		// Get popups
 		let infoPopup = el.querySelector('.info');
 
 		// Get headings and items that must always show heading
 		let heading = el.querySelector('.box-item__heading');
-		let itsCode = el.classList.contains("always-show");
+		let alwaysShow = el.classList.contains("always-show");
 
 		// Show/hide popups on hover and focus
 		el.addEventListener('mouseenter', showPopup);
@@ -41,7 +39,7 @@ boxItems.forEach(
 		
 		// Show/hide headings on source links focus
 		let boxHeadingLink = el.querySelector('.caption-link');
-		if (! itsCode &&
+		if (! alwaysShow &&
 			boxHeadingLink != null) {
 				boxHeadingLink.addEventListener('focus', onBox);
 				boxHeadingLink.addEventListener('focusout', outBox);
@@ -52,7 +50,7 @@ boxItems.forEach(
 		
 		// Shows headings
 		function onBox() {
-			if (! itsCode) {
+			if (! alwaysShow) {
 				heading.classList.remove('visually-hidden');
 			}
 			else {
@@ -62,7 +60,7 @@ boxItems.forEach(
 
 		// Hides headings
 		function outBox() {
-			if (! itsCode) {
+			if (! alwaysShow) {
 				heading.classList.add('visually-hidden');
 			}
 			else {
