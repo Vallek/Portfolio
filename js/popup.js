@@ -25,14 +25,14 @@ boxItems.forEach(
 		el.addEventListener('mouseleave', outBox);
 
 		// Hide popups on self hover
-		if (infoPopup !== null) {
-			infoPopup.addEventListener('mouseover', removeIt);
-		}
-		function removeIt() {	
-			infoPopup.classList.add('visually-hidden');	
-			infoPopup.style.transform = null;
-			infoPopup.style.transform = null;
-		}
+		// if (infoPopup !== null) {
+		// 	infoPopup.addEventListener('mouseover', removeIt);
+		// }
+		// function removeIt() {	
+		// 	infoPopup.classList.add('visually-hidden');	
+		// 	infoPopup.style.transform = null;
+		// 	infoPopup.style.transform = null;
+		// }
 
 		// Show heading on items links focus
 		let boxLink = el.querySelector('.box-item__image-link');
