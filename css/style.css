@@ -431,20 +431,6 @@ a:focus {
 	max-width: 300px;
 }
 
-.box-item_htmlac-work::after {
-	content: attr(title);
-	background-image: url('../img/works/htmlac-logo.png');
-	display: block;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 30px;
-	height: 30px;
-	background-repeat: no-repeat;
-    background-size: 100%;
-    z-index: 1;
-}
-
 .job__heading {
 	margin-top: 0;
 	margin-bottom: 10px;
