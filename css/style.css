@@ -25,7 +25,6 @@
 .home {
 	line-height: initial;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 16px;
 	max-width: 1920px;
 	margin: 0 auto;
 	padding-top: 1rem;
@@ -88,7 +87,7 @@ a:focus {
 	color: #442010;
 	font-family: 'Brygada 1918', Georgia, 'Times New Roman', serif;
 	font-weight: 700;
-	font-size: 46px;
+	font-size: 2.9rem;
 	line-height: 1.1;
 	margin: 0;
 }
@@ -104,7 +103,7 @@ a:focus {
 }
 
 .header__about-me {
-	font-size: 20px;
+	font-size: 1.25rem;
 	max-width: 80ch;
 	margin: 0;
 }
@@ -258,7 +257,7 @@ a:focus {
 }
 
 .section__heading {
-	font-size: 30px;
+	font-size: 1.9rem;
 	width: 100%;
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -353,7 +352,7 @@ a:focus {
 	background-color: #bdbdbdcf;
 	color: white;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 .box-item__image {
@@ -439,7 +438,7 @@ a:focus {
 .job__text {
 	margin-top: 0;
 	margin-bottom: 1rem;
-	font-size: 18px;
+	font-size: 1.125rem;
 	max-width: 80ch;
 }
 
@@ -563,19 +562,19 @@ a:focus {
 }
 
 .attribution {
-	font-size: 13px;
+	font-size: 0.8rem;
 	color: rgb(118, 118, 118);
 }
 
 .attribution__link {
-	font-size: 13px;
+	font-size: 0.8rem;
 	color: rgb(118, 118, 118);
 	text-decoration: none;
 }
 
 /* Page */
 .page__heading {
-	font-size: 2em;
+	font-size: 2rem;
 	margin-top: 0;
 	margin-bottom: 0.67em;
 }
@@ -595,14 +594,14 @@ a:focus {
 }
 
 .page__text {
-	font-size: 18px;
+	font-size: 1.125em;
 	max-width: 80ch;
 }
 
 .points-list {
 	list-style: none;
 	padding-left: 0;
-	font-size: 18px;
+	font-size: 1.125em;
 	max-width: 80ch;
 }
 
@@ -634,7 +633,7 @@ a:focus {
 }
 
 .sign-up-big {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: bold;
 }
 
@@ -651,7 +650,7 @@ a:focus {
 }
 
 .page__places-list {
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 .places-list__place {
@@ -700,7 +699,7 @@ a:focus {
 }
 
 .course__heading {
-	font-size: 1em;
+	font-size: 1rem;
 	display: inline-block;
 	background-color: rgba(255,255,255,0);
     cursor: pointer;
