@@ -321,7 +321,8 @@ a:focus {
 .job_current::after {
 	content: 'Сейчас';
 	display: inline-block;
-	padding: 3px 5px;
+	font-size: 1rem;
+	padding: 0.2em 0.4em;
 	position: absolute;
 	top: -0.5em;
 	right: 0;
@@ -410,7 +411,7 @@ a:focus {
 	top: 0;
 	z-index: 2;
 	background-color: #fff;
-	padding: 5px 5px;
+	padding: 0.3em;
 }
 
 .box-item__heading-link {
@@ -422,7 +423,7 @@ a:focus {
 	display: block;
 	position: absolute;
 	z-index: 0;
-	padding: 1rem 1rem 0;
+	padding: 1em 1em 0;
 	box-shadow: 5px 3px 10px -3px rgb(56, 56, 56);
 	background-color: #fff;
 	width: auto;
@@ -444,8 +445,8 @@ a:focus {
 
 .info__list {
 	margin: 0;
-	margin-bottom: 1rem;
-	padding-left: 20px;
+	margin-bottom: 1em;
+	padding-left: 1.25em;
 }
 
 .info__list-item {
@@ -523,7 +524,7 @@ a:focus {
 	display: inline-block;
 	border-radius: 5px;
 	margin: 2px 0;
-	padding: 3px;
+	padding: 0.2em;
 	border-radius: 5px;
 }
 
@@ -553,7 +554,7 @@ a:focus {
 .footer {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 20px 2vw;
+	padding: 1.25em 2vw;
 	text-align: center;
 }
 
@@ -608,7 +609,7 @@ a:focus {
 	color: white;
 	position: relative;
 	margin-bottom: 0.3em;
-	padding: 0 5px;
+	padding: 0 0.3em;
 }
 
 .points-list__point::after {
@@ -681,13 +682,6 @@ a:focus {
 	list-style: none;
 }
 
-.course-list {
-	box-sizing: border-box;
-	width: 95%;
-	padding-left: 25px;
-	margin-top: 0px;
-}
-
 .course__content {
 	display: block;
 	max-width: 90%;
@@ -704,7 +698,7 @@ a:focus {
 	background-color: rgba(255,255,255,0);
     cursor: pointer;
     margin: 0px 0px 10px 0px;
-    padding: 10px;
+    padding: 0.62em;
     border: 1px solid #C0C0C0;
 	border-radius: 3px;
     box-sizing: border-box;
