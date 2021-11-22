@@ -43,7 +43,7 @@ a:focus {
 	box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto 25px ;
+	margin: 0 auto 1.6em;
 	width: 100%;
 	padding: 0 2vw;
 }
@@ -56,7 +56,7 @@ a:focus {
 
 @media (max-width: 900px) {
 	.header__main {
-		margin-bottom: 20px;
+		margin-bottom: 1.25em;
 	}
 }
 
@@ -64,7 +64,7 @@ a:focus {
 	display: flex;
 	flex: 1 0 auto;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 1.25em;
 }
 
 .avatar {
@@ -74,7 +74,7 @@ a:focus {
 }
 
 .header__avatar {
-	margin-right: 20px;
+	margin-right: 1.25em;
 }
 
 @media (max-width: 500px) {
@@ -145,7 +145,9 @@ a:focus {
 
 .social-links {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-end;
+	gap: 0.7em;
 }
 
 @media (max-width: 900px) {
@@ -156,7 +158,6 @@ a:focus {
 
 .social-link {
 	position: relative;
-	margin-right: 10px;
 }
 
 .social-link::after {
@@ -222,7 +223,7 @@ a:focus {
 }
 
 .side-column__section {
-	margin-bottom: 25px;
+	margin-bottom: 1.6em;
 }
 
 .last-posts {
@@ -232,8 +233,8 @@ a:focus {
 .main__section {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 30px;
-	margin-right: 2rem;
+	margin-bottom: 2em;
+	margin-right: 2em;
 	grid-column: 1 / 2;
 	align-content: start;
 }
@@ -260,7 +261,7 @@ a:focus {
 	font-size: 1.9rem;
 	width: 100%;
 	margin-top: 0;
-	margin-bottom: 20px;
+	margin-bottom: 1.25em;
 }
 
 .anchor-link {
@@ -299,8 +300,8 @@ a:focus {
 	max-width: 450px;
 	width: 100%;
 	height: 300px;
-	margin-right: 2rem;
-	margin-bottom: 2rem;
+	margin-right: 2em;
+	margin-bottom: 2em;
 	outline: 1px solid #e2e2e2;
 }
 
@@ -433,12 +434,12 @@ a:focus {
 
 .job__heading {
 	margin-top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 0.5em;
 }
 
 .job__text {
 	margin-top: 0;
-	margin-bottom: 1rem;
+	margin-bottom: 1em;
 	font-size: 1.125rem;
 	max-width: 80ch;
 }
@@ -462,7 +463,7 @@ a:focus {
 .consult__heading::after
  {
 	content: ' 💬';
-	margin-left: 10px;
+	margin-left: 0.5em;
 	visibility: hidden;
 	display: inline-block;
 }
@@ -522,8 +523,7 @@ a:focus {
 	position: relative;
 	color: rgb(36, 36, 36);
 	display: inline-block;
-	border-radius: 5px;
-	margin: 2px 0;
+	margin: 0.2em 0;
 	padding: 0.2em;
 	border-radius: 5px;
 }
@@ -582,7 +582,7 @@ a:focus {
 .page__section {
 	margin-right: 1rem;
 	flex-grow: 1;
-	margin-bottom: 30px;
+	margin-bottom: 1.875em;
 }
 
 .page__illustration {
@@ -685,11 +685,11 @@ a:focus {
 .course__content {
 	display: block;
 	max-width: 90%;
-	margin-bottom: 20px;
+	margin-bottom: 1.25em;
 }
 
 .course__content > li {
-	margin: 10px 0px;
+	margin: 0.625em 0px;
 }
 
 .course__heading {
@@ -697,7 +697,7 @@ a:focus {
 	display: inline-block;
 	background-color: rgba(255,255,255,0);
     cursor: pointer;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 0.625em 0px;
     padding: 0.62em;
     border: 1px solid #C0C0C0;
 	border-radius: 3px;
