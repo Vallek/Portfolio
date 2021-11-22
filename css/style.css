@@ -261,7 +261,8 @@ a:focus {
 	font-size: 1.9rem;
 	width: 100%;
 	margin-top: 0;
-	margin-bottom: 1.25em;
+	margin-bottom: 0.67em;
+	line-height: 1.15
 }
 
 .anchor-link {
