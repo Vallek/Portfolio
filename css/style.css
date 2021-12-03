@@ -784,14 +784,14 @@ a:focus {
 }
 
 /* No sign up mode */
-/* .sign-up-big {
+.sign-up-big {
 	display: none;
-} */
+}
 
-/* .course__sign-up {
+.course__sign-up {
 	display: none;
-} */
+}
 
-/* .consult {
+.consult {
 	display: none;
-} */
+}
