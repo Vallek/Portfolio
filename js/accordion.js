@@ -1,3 +1,4 @@
+'use strict';
 let accItem = document.querySelectorAll('.course__item');
 let accHeading = document.querySelectorAll('.course__heading');
 

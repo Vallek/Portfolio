@@ -1,3 +1,4 @@
+'use strict';
 // Get items
 let boxItems = document.querySelectorAll('.box-item');
 
