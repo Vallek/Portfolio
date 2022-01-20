@@ -516,11 +516,6 @@ a:focus {
 	text-align: center;
 }
 
-.skills__link {
-	color: initial;
-	text-decoration: none;
-}
-
 .skills__skill {
 	position: relative;
 	color: rgb(36, 36, 36);
@@ -550,6 +545,15 @@ a:focus {
 
 .skills__skill:hover > .skills__link {
 	color: #fff;
+}
+
+.skills__link {
+	color: initial;
+	text-decoration: none;
+}
+
+.skills__skill_big {
+	font-size: 1.2em;
 }
 
 /* Footer */
