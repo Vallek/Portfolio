@@ -640,7 +640,8 @@ a:focus {
 	padding-left: 1em;
 }
 
-.sign-up-big {
+.sign-up-big,
+.course-sign-up {
 	font-size: 1.5rem;
 	font-weight: bold;
 }
@@ -736,7 +737,7 @@ a:focus {
 	height: 150px;
 }
 
-.course__sign-up {
+.lectures__sign-up {
 	color: white;
 	text-decoration: none;
 	display: inline-block;
@@ -792,7 +793,11 @@ a:focus {
 	display: none;
 } */
 
-/* .course__sign-up {
+.course-sign-up {
+	display: none;
+}
+
+/* .lectures__sign-up {
 	display: none;
 } */
 
