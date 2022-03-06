@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
+<html lang="ru">
+	<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,9 @@
 		
 	<link rel="icon" sizes="16x16" href="/Portfolio/favicons/favicon1.png">
 	<link rel="icon" sizes="32x32" href="/Portfolio/favicons/favicon1.png">
-</head><body class="page home"><header class="header">
+</head>
+  <body class="page home">   
+	<header class="header">
 	<div class="header__main">
 		<div class="header__intro">
 			<img class="avatar header__avatar" src="/Portfolio/img/ava.jpg" alt="аватарка с фото автора" width="80" height="80">
@@ -28,10 +31,16 @@
 			
 	</div>
 	<aside class="header__info">
-		<p class="contact header__contact">
-			<strong>Пишите:</strong>
-			<a href="mailto:vwebdis@gmail.com">vwebdis@gmail.com</a>
-		</p>
+		<section class="contacts">
+			<p class="contacts__contact">
+				<strong>Email:</strong>
+				<a href="mailto:vwebdis@gmail.com">vwebdis@gmail.com</a>
+			</p>
+			<p class="contacts__contact">
+				<strong>Telegram:</strong>
+				<a>@webval</a>
+			</p>
+		</section>
 		<p>Живу в Санкт-Петербурге. Предпочитаю работать удаленно.</p>
 		<div class="social-links">
 			<a class="social-link github" href="https://github.com/Vallek/">
@@ -47,9 +56,19 @@
 				<img class="social-logo twitter" src="/Portfolio/img/icons/twi.svg" width="30" height="30" alt="иконка твиттера">
 			</a>
 		</div>
+		<section class="locales">
+			<h3 class="locales__text visually-hidden">Выбор языка/Languages</h3>
+			
+			<a class="locales__lang locales__lang_ru" href="bem.html">RU</a>
+			<a class="locales__lang locales__lang_en" href="en/bem.html">EN</a>
+			
+		</section>
 	</aside>
-</header><main class="main">
-		<article class="section page__section"><a class="crumbs-link" href="/Portfolio/pages/projects/all-lectures.html">Список всех лекций</a><h1 class="page__heading">Лекция "Введение в методологию БЭМ"</h1>
+</header>
+	<main class="main">
+		<article class="section page__section">
+<a class="crumbs-link" href="/Portfolio/pages/projects/all-lectures.html">Список всех лекций</a>
+<h1 class="page__heading">Лекция "Введение в методологию БЭМ"</h1>
 <p class="page__text">На этом занятии вы познакомитесь с методологией БЭМ. Это система именования классов и не только. Она решает много потенциальных проблем фронтенда, помогает организовать код и файловую структуру проекта.</p>
 <p class="page__text">Вы узнаете базовые подходы к именованию классов, основные принципы методологии БЭМ, увидите их в действии на живой верстке и научитесь их использовать.</p>
 <h2>План занятия</h2>
@@ -64,7 +83,10 @@
 </ol>
 <p class="page__text">Проводил эту лекцию в Skillfactory.</p>
 <p class="page__about sign-up-big">Записаться на лекцию можно <a href="../lectures-sign-up/bem-sign-up.html">на отдельной странице</a></p>
-		</article><aside class="side-column">
+		</article>
+		
+<aside class="side-column">
+
 	
 	<section class="section side-column__section consult">
 		<h2 class="section__heading consult__heading">Запишитесь на консультацию</h2>
@@ -132,7 +154,9 @@
 		<h2 class="section__heading">Последние записи<br> <a href="https://vallek.github.io/">в блоге</a></h2>
 		<iframe loading="lazy" sandbox="allow-popups" class="last-posts" src="https://vallek.github.io/last-posts.html" title="Последние записи в блоге"></iframe>
 	</section>
-</aside></main><footer class="footer">
+</aside>
+	</main>
+   		<footer class="footer">
 	<p class="copyright footer__copyright">&copy; 2018—2022 <a href="mailto:vwebdis@gmail.com">Валерий Хаслер</a>. Собрано на Jekyll</p>
 	<div class="attribution footer__attribution">
 		Icons made by <a class="attribution__link" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a class="attribution__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
@@ -141,5 +165,6 @@
 		<a class="attribution__link" href="https://www.freepik.com/vectors/texture">Texture vector created by macrovector - www.freepik.com</a>
 		Icons made by <a class="attribution__link" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a class="attribution__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 	</div>
-</footer></body>
+</footer>
+  </body>
 </html>

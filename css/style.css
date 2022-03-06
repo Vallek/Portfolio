@@ -134,6 +134,7 @@ a:focus {
 }
 
 .header__info {
+	padding-top: 1em;
 	text-align: right;
 }
 
@@ -143,11 +144,46 @@ a:focus {
 	}
 }
 
+.contacts__contact {
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+.locales__text {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 0.3em;
+}
+
+.locales__lang {
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.locales__lang:hover {
+	text-decoration: underline;
+}
+
+.locales__lang:not(:last-of-type) {
+	margin-right: 0.7em;
+}
+
+.locales__lang_ru::after {
+	content: ' 🇷🇺';
+}
+
+.locales__lang_en::after {
+	content: ' 🇬🇧';
+}
+
 .social-links {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	gap: 0.7em;
+	margin-bottom: 0.7em;
 }
 
 @media (max-width: 900px) {
@@ -220,6 +256,10 @@ a:focus {
 		grid-row: initial;
 		justify-self: start;
 	}
+}
+
+.side-column_home {
+	padding-top: 2.9em;
 }
 
 .side-column__section {
@@ -793,7 +833,15 @@ a:focus {
 	display: none;
 } */
 
+.sign-up-big_en {
+	display: none;
+}
+
 .course-sign-up {
+	display: none;
+}
+
+.course-sign-up_en {
 	display: none;
 }
 
@@ -801,6 +849,14 @@ a:focus {
 	display: none;
 } */
 
+.lectures__sign-up_en {
+	display: none;
+}
+
 /* .consult {
 	display: none;
 } */
+
+.consult_en {
+	display: none;
+}
