@@ -158,12 +158,19 @@ a:focus {
 }
 
 .locales__lang {
+	position: relative;
 	font-weight: 600;
 	text-decoration: none;
 }
 
-.locales__lang:hover {
-	text-decoration: underline;
+.locales__lang:hover::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: black;
 }
 
 .locales__lang:not(:last-of-type) {
@@ -171,11 +178,25 @@ a:focus {
 }
 
 .locales__lang_ru::after {
-	content: ' 🇷🇺';
+	content: '';
+	display: inline-block;
+	background-image: url('../img/icons/flag-ru.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 1em;
+	height: 1em;
+	margin-left: 0.2em;
 }
 
 .locales__lang_en::after {
-	content: ' 🇬🇧';
+	content: '';
+	display: inline-block;
+	background-image: url('../img/icons/flag-uk.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 1em;
+	height: 1em;
+	margin-left: 0.2em;
 }
 
 .social-links {
