@@ -467,6 +467,11 @@ a:focus {
 	background-color: #123452;
 }
 
+.box-item__image_teachme {
+	object-fit: contain;
+	background-color: #191919;
+}
+
 .box-item__heading {
 	color: black;
 	font-weight: 400;
