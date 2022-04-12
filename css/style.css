@@ -397,6 +397,22 @@ a:focus {
 	z-index: 1;
 }
 
+.job_current-en::after {
+	content: 'Current';
+	display: inline-block;
+	font-size: 1rem;
+	padding: 0.2em 0.4em;
+	position: absolute;
+	top: -0.5em;
+	right: 0;
+	transform: translateX(1vw) skew(0, -2deg);
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: rgb(21, 145, 17);
+	z-index: 1;
+}
+
 .box-item__image-link {
 	height: 100%;
 	overflow: hidden;
