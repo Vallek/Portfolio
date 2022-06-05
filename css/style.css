@@ -241,6 +241,11 @@ a:focus {
     transform: translate(-20px, -20px);
 }
 
+.social-link_codepen {
+	object-fit: cover;
+	object-position: 17%;
+}
+
 /* Main */
 .main {
 	box-sizing: border-box;
