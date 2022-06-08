@@ -241,9 +241,9 @@ a:focus {
     transform: translate(-20px, -20px);
 }
 
-.social-link_codepen {
+.social-logo_codepen {
 	object-fit: cover;
-	object-position: 17%;
+	object-position: 18%;
 }
 
 /* Main */
