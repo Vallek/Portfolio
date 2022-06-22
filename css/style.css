@@ -884,9 +884,9 @@ a:focus {
 }
 
 /* No sign up mode */
-.sign-up-big {
+/* .sign-up-big {
 	display: none;
-}
+} */
 
 .sign-up-big_en {
 	display: none;
@@ -900,9 +900,9 @@ a:focus {
 	display: none;
 }
 
-.lectures__sign-up {
+/* .lectures__sign-up {
 	display: none;
-}
+} */
 
 .lectures__sign-up_en {
 	display: none;
