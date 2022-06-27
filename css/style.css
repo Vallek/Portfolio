@@ -757,15 +757,6 @@ a:focus {
 	font-size: 1.125rem;
 }
 
-.places-list__place {
-	display: inline-block;
-}
-
-.places-list__sum {
-	margin-left: 0;
-	display: inline-block;
-}
-
 /* Course */
 .pdf-doc {
 	min-width: 350px;
