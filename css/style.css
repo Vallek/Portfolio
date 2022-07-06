@@ -845,6 +845,33 @@ a:focus {
 	outline-color: black;
 }
 
+/* Skip link */
+.skip-to-main {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	left: 0;
+}
+
+.skip-to-main:focus {
+	border: initial;
+	clip: initial;
+	height: initial;
+	margin: initial;
+	overflow: initial;
+	padding: initial;
+	position: absolute;
+	left: initial;
+	font-size: 2em;
+	background-color: #000;
+	color: #fff;
+	outline-color: #000;
+}
+
 /* JS */
 .visually-hidden {
 	border: 0;
