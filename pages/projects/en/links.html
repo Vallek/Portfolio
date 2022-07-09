@@ -13,6 +13,7 @@
 	<meta name="author" content="Валерий Хаслер">
 	<link rel="stylesheet" type="text/css" href="/Portfolio/css/normalize.css">
 	<link rel="stylesheet" href="/Portfolio/css/style.css">
+	<script async src="/Portfolio/js/header.js"></script>
 	<script async src="/Portfolio/js/popup.js"></script>
 		
 	<link rel="icon" sizes="16x16" href="/Portfolio/favicons/favicon1.png">
@@ -22,10 +23,11 @@
 	<a class="skip-to-main" href="#main">Skip to main content</a>
 	<div class="header__main">
 		<div class="header__intro">
-			<img class="avatar header__avatar" src="/Portfolio/img/ava.jpg" alt="аватарка с фото автора" width="80" height="80">
 			
-			<span class="header__title">Hi! My name is <span class="header__name">Val</span><br> and this is my <a href="/Portfolio/en/index.html">portfolio</a></span>
+			<a class="avatar" href="/Portfolio/index.html" aria-label="Ссылка на главную" title="Ссылка на главную"><img class="avatar__image" src="/Portfolio/img/ava.jpg" alt="аватарка с фото автора" width="80" height="80"></a>
+			<span class="header__title">Hi! My name is <span class="header__name">Val</span><br> and this is my <a class="header__home-link" href="/Portfolio/en/index.html">portfolio</a></span>
 				
+			<button class="header__show"></button>
 		</div>
 			
 	</div>
@@ -43,17 +45,17 @@
 		</section>
 		<p>I live in Saint-Petersburg, Russia. Work remotely.</p>
 		<div class="social-links">
-			<a class="social-link github" href="https://github.com/Vallek/">
-				<img class="social-logo github" src="/Portfolio/img/icons/github.svg" width="30" height="30" alt="иконка гитхаба">
+			<a class="social-link social-link_github" href="https://github.com/Vallek/" title="Ссылка на гитхаб" aria-label="Ссылка на гитхаб">
+				<img class="social-logo social-logo_github" src="/Portfolio/img/icons/github.svg" width="30" height="30" alt="иконка гитхаба">
 			</a>
-			<a class="social-link jsfiddle" href="https://jsfiddle.net/user/Vallek/fiddles/">
-				<img class="social-logo github" src="/Portfolio/img/icons/jsfiddle.svg" width="30" height="30" alt="иконка jsfiddle">
+			<a class="social-link social-link_codepen" href="https://codepen.io/vallek/pens/" title="Ссылка на codepen" aria-label="Ссылка на codepen">
+				<img class="social-logo social-logo_codepen" src="/Portfolio/img/icons/codepen.svg" width="30" height="30" alt="иконка codepen">
 			</a>
-			<a class="social-link youtube" href="https://www.youtube.com/channel/UCzS4sE_0ltfSz6qx_FUCTdA">
-				<img class="social-logo youtube" src="/Portfolio/img/icons/youtube.svg" width="30" height="30" alt="иконка ютьюба">
+			<a class="social-link social-link_youtube" href="https://www.youtube.com/channel/UCzS4sE_0ltfSz6qx_FUCTdA" title="Ссылка на youtube" aria-label="Ссылка на youtube">
+				<img class="social-logo social-logo_youtube" src="/Portfolio/img/icons/youtube.svg" width="30" height="30" alt="иконка ютьюба">
 			</a>
-			<a class="social-link twitter" href="https://twitter.com/_vallek">
-				<img class="social-logo twitter" src="/Portfolio/img/icons/twi.svg" width="30" height="30" alt="иконка твиттера">
+			<a class="social-link social-link_twitter" href="https://twitter.com/_vallek" title="Ссылка на twitter" aria-label="Ссылка на twitter">
+				<img class="social-logo social-logo_twitter" src="/Portfolio/img/icons/twi.svg" width="30" height="30" alt="иконка твиттера">
 			</a>
 		</div>
 		<section class="locales">
