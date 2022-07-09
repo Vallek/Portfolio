@@ -4,7 +4,6 @@ let showButton = header.querySelector('.header__show');
 let title = header.querySelector('.header__title');
 let about = header.querySelector('.header__about-me');
 let info = header.querySelector('.header__info');
-let ava = header.querySelector('.avatar');
 let main = header.querySelector('.header__main');
 let intro = header.querySelector('.header__intro');
 
@@ -51,6 +50,5 @@ function showPopup() {
 function changeStyle() {
 	main.classList.toggle('header__main_visible');
 	intro.classList.toggle('header__intro_visible');
-	// header.classList.toggle('header_no-wrap');
 	showButton.classList.toggle('header__show_close');
 }

@@ -340,10 +340,6 @@ a.avatar:hover {
 	margin-bottom: 1.25em;
 }
 
-.header_no-wrap {
-	flex-wrap: wrap;
-}
-
 /* Main */
 .main {
 	box-sizing: border-box;
