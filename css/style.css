@@ -308,6 +308,9 @@ a.avatar:hover {
 		width: 100%;
 		margin-bottom: 0;
 	}
+	/* .header__intro {
+		margin-bottom: 0;
+	} */
 	.avatar:visited {	
 		outline-color: var(--text-color);
 	}

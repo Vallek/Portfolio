@@ -34,6 +34,7 @@ function hideNavOnStart() {
 
 hideNavOnStart();
 window.addEventListener('resize', hideNav);
+window.addEventListener('resize', changeStyleMob);
 
 showButton.addEventListener('click', showPopup);
 showButton.addEventListener('click', changeStyle);
@@ -48,7 +49,19 @@ function showPopup() {
 }
 
 function changeStyle() {
-	main.classList.toggle('header__main_visible');
-	intro.classList.toggle('header__intro_visible');
+	if (main.classList.contains !== "header__intro_visible") {
+		main.classList.toggle('header__intro_visible');
+	}
+	if (intro.classList.contains !== "header__intro_visible") {
+		intro.classList.toggle('header__intro_visible');
+	}
 	showButton.classList.toggle('header__show_close');
+}
+
+function changeStyleMob() {
+	if (window.innerWidth < 900 &&
+		main.classList.contains !== "header__intro_visible") {
+			main.classList.add('header__intro_visible');
+			intro.classList.add('header__intro_visible');
+		}
 }
