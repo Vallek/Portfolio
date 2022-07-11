@@ -875,7 +875,7 @@ a.avatar:hover {
 .course__content {
 	display: block;
 	max-width: 90%;
-	margin-bottom: 1.25em;
+	margin-bottom: 1em;
 }
 
 .course__content > li {
@@ -924,6 +924,7 @@ a.avatar:hover {
 	text-decoration: none;
 	display: inline-block;
 	margin-left: 1em;
+	margin-bottom: 0.7em;
 	padding: 0.5em 1em;
 	background-color: var(--accent-color);
 }
