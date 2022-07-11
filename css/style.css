@@ -254,12 +254,10 @@ a.avatar:hover {
 
 .social-logo_github {
 	border-radius: 50%;
-	background-color: #fff;
 }
 
 .social-logo_codepen {
 	border-radius: 50%;
-	background-color: #fff;
 	object-fit: cover;
 	object-position: 18%;
 }
@@ -308,9 +306,6 @@ a.avatar:hover {
 		width: 100%;
 		margin-bottom: 0;
 	}
-	/* .header__intro {
-		margin-bottom: 0;
-	} */
 	.avatar:visited {	
 		outline-color: var(--text-color);
 	}
@@ -326,6 +321,13 @@ a.avatar:hover {
 	}
 	.social-links {
 		justify-content: flex-end;
+	}
+	.social-logo_github {
+		background-color: #fff;
+	}
+	
+	.social-logo_codepen {
+		background-color: #fff;
 	}
 }
 
