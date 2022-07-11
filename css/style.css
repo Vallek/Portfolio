@@ -263,6 +263,7 @@ a.avatar:hover {
 }
 
 .header__show {
+	display: none;
 	align-self: stretch;
 	margin-left: auto;
 	padding: 0 1em;
@@ -270,7 +271,6 @@ a.avatar:hover {
 	color: #fff;
 	background-color: rgba(255, 255, 255, 0);
 	border-radius: 5px;
-	display: none;
 }
 
 .header__show:focus {
@@ -278,16 +278,13 @@ a.avatar:hover {
 	outline-offset: 2px;
 }
 
-.header__show::before {
-	content: url('../img/icons/arrow-down.svg');
-}
-
 .header__show_close {
 	width: initial;
 }
 
-.header__show.header__show_close::before {
-	content: url('../img/icons/arrow-up.svg');
+.show__icon {
+	width: 1em;
+	height: 1em;
 }
 
 /* Header mobile */
