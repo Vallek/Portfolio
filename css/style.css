@@ -586,6 +586,12 @@ a.avatar:hover {
 	background-color: #d99e56;
 }
 
+.box-item__image_sd {
+	color: white; 
+	object-fit: contain;
+	background-color: #3052d8;
+}
+
 .box-item__image_inno {
 	color: white; 
 	object-fit: contain;
