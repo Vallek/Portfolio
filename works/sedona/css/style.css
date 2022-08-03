@@ -577,6 +577,7 @@ footer {
 .price-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	align-items: flex-start;
 	margin-left: auto;
 	max-width: 320px;
@@ -588,14 +589,13 @@ footer {
 	border: none;
 }
 
-.price-set input[type="range"] {
-	width: 49%;
-	position: absolute;
-	top: 75px;
+.price-numbers {
+	display: flex;
 }
 
-.price-set input[name="maxPrice"] {
-	right: 0;
+.price-set input[type="range"] {
+	width: 49%;
+	top: 75px;
 }
 
 .price-set input[type="number"] {

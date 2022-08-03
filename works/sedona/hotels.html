@@ -45,10 +45,14 @@
 						<div class="price-wrapper">
 							<fieldset class="price-set">
 								<legend>Стоимость в сутки (Р):</legend>
-								<input type="range" name="minPrice" min="0" max="5000" step="100" value="0" oninput="this.nextElementSibling.value=this.value" />
-								<input type="number" name="" min="0" max="5000" value="0" oninput="this.previousElementSibling.value=this.value" />
-								<input type="range" name="maxPrice" min="0" max="5000" step="100" value="3000" oninput="this.nextElementSibling.value=this.value" />
-								<input type="number" name="" min="0" max="5000" value="3000" oninput="this.previousElementSibling.value=this.value" />
+								<div class="price-numbers">
+									<input class="price-min-number" type="range" name="minPrice" min="0" max="5000" step="100" value="0" oninput="document.querySelector('.price-min-slider').value=this.value" />
+									<input  class="price-max-number" type="range" name="maxPrice" min="0" max="5000" step="100" value="3000" oninput="document.querySelector('.price-max-slider').value=this.value" />
+								</div>
+								<div class="price-sliders">	
+									<input class="price-min-slider" type="number" name="" min="0" max="5000" value="0" oninput="document.querySelector('.price-min-number').value=this.value" />
+									<input class="price-max-slider" type="number" name="" min="0" max="5000" value="3000" oninput="document.querySelector('.price-max-number').value=this.value" />
+								</div>
 							</fieldset>
 							<button type="submit">Показать</button>
 						</div>
