@@ -33,9 +33,8 @@ function hideNavOnStart() {
 }
 
 hideNavOnStart();
-window.addEventListener('resize', hideNav);
-window.addEventListener('resize', changeStyleMob);
 
+window.addEventListener('resize', hideNav);
 showButton.addEventListener('click', showPopup);
 showButton.addEventListener('click', changeStyle);
 
@@ -49,12 +48,6 @@ function showPopup() {
 }
 
 function changeStyle() {
-	if (main.classList.contains !== "header__intro_visible") {
-		main.classList.toggle('header__intro_visible');
-	}
-	if (intro.classList.contains !== "header__intro_visible") {
-		intro.classList.toggle('header__intro_visible');
-	}
 	showButton.classList.toggle('header__show_close');
 }
 
