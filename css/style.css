@@ -109,6 +109,13 @@ a.avatar:hover {
 	margin: 0;
 }
 
+@media (max-width: 900px) {
+	.header__about-me,
+	.header__info {
+		display: none;
+	}
+}
+
 .header__important {
 	font-weight: 400;
 	position: relative;

@@ -34,27 +34,23 @@ function hideNavOnStart() {
 
 hideNavOnStart();
 
-window.addEventListener('resize', hideNav);
 showButton.addEventListener('click', showPopup);
-showButton.addEventListener('click', changeStyle);
 
 function showPopup() {
 	for (let el of arr) {
+		let elStyles = window.getComputedStyle(el);
+		let displayValue = elStyles.getPropertyValue('display');
 		if (el != null &&
-			el != title) {
+			displayValue != 'none') {
 			el.classList.toggle('visually-hidden');
+			el.style.display = 'revert';
+		}
+		if (el != null && 
+			displayValue == 'none') {
+			el.style.display = 'revert';
+			el.classList.remove('visually-hidden');
 		}
 	}
 }
 
-function changeStyle() {
-	showButton.classList.toggle('header__show_close');
-}
-
-function changeStyleMob() {
-	if (window.innerWidth < 900 &&
-		main.classList.contains !== "header__intro_visible") {
-			main.classList.add('header__intro_visible');
-			intro.classList.add('header__intro_visible');
-		}
-}
+window.addEventListener('resize', hideNav);
