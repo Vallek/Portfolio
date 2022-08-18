@@ -660,7 +660,7 @@ a.avatar:hover {
 /* Aside */
 .consult__heading::after
  {
-	content: ' 💬';
+	content: ' \1F4AC';
 	margin-left: 0.5em;
 	visibility: hidden;
 	display: inline-block;
