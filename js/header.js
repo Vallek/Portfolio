@@ -10,15 +10,6 @@ let intro = header.querySelector('.header__intro');
 let arr = [];
 arr.push(about, info);
 
-function hideNav() {
-	for (let el of arr) {
-		if (el != null &&
-		window.innerWidth >= 900) {
-			el.classList.remove('visually-hidden');
-		}
-	}
-}
-
 function hideNavOnStart() {
 	for (let el of arr) {
 		if (el != null &&
@@ -31,10 +22,7 @@ function hideNavOnStart() {
 		}
 	}
 }
-
 hideNavOnStart();
-
-showButton.addEventListener('click', showPopup);
 
 function showPopup() {
 	for (let el of arr) {
@@ -52,5 +40,14 @@ function showPopup() {
 		}
 	}
 }
+showButton.addEventListener('click', showPopup);
 
+function hideNav() {
+	for (let el of arr) {
+		if (el != null &&
+		window.innerWidth >= 900) {
+			el.classList.remove('visually-hidden');
+		}
+	}
+}
 window.addEventListener('resize', hideNav);
