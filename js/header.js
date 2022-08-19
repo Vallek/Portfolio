@@ -26,17 +26,17 @@ hideNavOnStart();
 
 function showPopup() {
 	for (let el of arr) {
-		let elStyles = window.getComputedStyle(el);
-		let displayValue = elStyles.getPropertyValue('display');
-		if (el != null &&
-			displayValue != 'none') {
-			el.classList.toggle('visually-hidden');
-			el.style.display = 'revert';
-		}
-		if (el != null && 
-			displayValue == 'none') {
-			el.style.display = 'revert';
-			el.classList.remove('visually-hidden');
+		if (el != null) {
+			let elStyles = window.getComputedStyle(el);
+			let displayValue = elStyles.getPropertyValue('display');
+			if (displayValue != 'none') {
+				el.classList.toggle('visually-hidden');
+				el.style.display = 'revert';
+			}
+			if (displayValue == 'none') {
+				el.style.display = 'revert';
+				el.classList.remove('visually-hidden');
+			}
 		}
 	}
 }
