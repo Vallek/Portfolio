@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Курс "Создание и верстка веб-сайтов"
+	<title>Курс "Основы Фронтенда"
 		
 		&mdash; Портфолио Валеры Хаслера
 		
@@ -14,344 +14,398 @@
 	<link rel="preload" href="/Portfolio/fonts/brygada-1918-v1-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/Portfolio/fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" type="text/css" href="/Portfolio/css/normalize.css">
-	<link rel="stylesheet" href="/Portfolio/css/style.css">
-	<script defer src="/Portfolio/js/header.js"></script>
+	
+		<link rel="stylesheet" href="/Portfolio/css/style_web.css">
+		<script defer src="/Portfolio/js/accordion.js"></script>
+		<script defer src="/Portfolio/js/web-scroll-anim.js"></script>
+		
 	<script defer src="/Portfolio/js/popup.js"></script>
-		
-		<script defer src="/Portfolio/js/accordion.js"></script>	
-		
+	
 	<link rel="icon" sizes="16x16" href="/Portfolio/favicons/favicon1.png">
 	<link rel="icon" sizes="32x32" href="/Portfolio/favicons/favicon1.png">
 </head>
-  <body class="page home">   
+	<body class="page">
 	<header class="header">
-	<a class="skip-to-main" href="#main">Перейти к основному содержимому</a>
-	<div class="header__main">
-		<div class="header__intro">
-			
-			<a class="avatar" href="/Portfolio/index.html" aria-label="Ссылка на главную" title="Ссылка на главную"><img class="avatar__image" src="/Portfolio/img/ava.jpg" alt="аватарка с фото автора" width="80" height="80"></a>
-			<span class="header__title">Привет! Меня зовут <span class="header__name">Валера Хаслер</span><br> и это мое <a class="header__home-link" href="/Portfolio/index.html">портфолио</a></span>
-				
-			<button class="header__show show">
-				<svg class="show__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				viewbox="0 0 384.97 384.97">
-					<g>
-						<g id="Menu">
-							<path fill="#fff" d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
-							C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"/>
-							<path fill="#fff" d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
-							S379.58,180.455,372.939,180.455z"/>
-							<path fill="#fff" d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
-							c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"/>
-						</g>
-					</g>
-				</svg>
-			</button>
+		<div class="header__menu">
+			<a class="avatar" href="/Portfolio/index.html" aria-label="Ссылка на главную" title="Ссылка на главную"><img class="avatar__image" src="/Portfolio/img/ava.jpg" alt="аватарка с фото автора" width="80" height="80">Курс Валеры Хаслера</a>
+			<ul class="header__list">
+				<li><a class="header__link" href="#about">О курсе</a></li>
+				<li><a class="header__link" href="#skills">Навыки</a></li>
+				<li><a class="header__link" href="#practice">Практика</a></li>
+				<li><a class="header__link" href="#pros">Преимущества</a></li>
+				<li><a class="header__link" href="#plan">Программа</a></li>
+				<li><a class="header__link" href="#places">Где проводился</a></li>
+			</ul>
 		</div>
-			
-	</div>
-	<aside class="header__info">
-		<section class="contacts">
-			<h2 class="visually-hidden">Контакты</h2>
-			<p class="contacts__contact">
-				<strong>Email:</strong>
-				<a href="mailto:vwebdis@gmail.com">vwebdis@gmail.com</a>
-			</p>
-			<p class="contacts__contact">
-				<strong>Telegram:</strong>
-				<a>@webval</a>
-			</p>
-		</section>
-		<p>Живу в Санкт-Петербурге. Предпочитаю работать удаленно.</p>
-		<div class="social-links">
-			<a class="social-link social-link_github" href="https://github.com/Vallek/" title="Ссылка на гитхаб" aria-label="Ссылка на гитхаб">
-				<img class="social-logo social-logo_github" src="/Portfolio/img/icons/github.svg" width="30" height="30" alt="иконка гитхаба">
-			</a>
-			<a class="social-link social-link_codepen" href="https://codepen.io/vallek/pens/" title="Ссылка на codepen" aria-label="Ссылка на codepen">
-				<img class="social-logo social-logo_codepen" src="/Portfolio/img/icons/codepen.svg" width="30" height="30" alt="иконка codepen">
-			</a>
-			<a class="social-link social-link_youtube" href="https://www.youtube.com/channel/UCzS4sE_0ltfSz6qx_FUCTdA" title="Ссылка на youtube" aria-label="Ссылка на youtube">
-				<img class="social-logo social-logo_youtube" src="/Portfolio/img/icons/youtube.svg" width="30" height="30" alt="иконка ютьюба">
-			</a>
-			<a class="social-link social-link_twitter" href="https://twitter.com/_vallek" title="Ссылка на twitter" aria-label="Ссылка на twitter">
-				<img class="social-logo social-logo_twitter" src="/Portfolio/img/icons/twi.svg" width="30" height="30" alt="иконка твиттера">
-			</a>
+		<div class="header__content">
+			<h1 class="header__heading"><span class="header__text_thin">курс</span> Основы Фронтенда</h1>
+			<iframe class="course-video" width="560" height="315" src="https://www.youtube.com/embed/6Z_YovH3-9s" title="последнее видео на канале" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href='https://www.youtube.com/embed/6Z_YovH3-9s?autoplay=1'><img src='https://i.ytimg.com/vi/6Z_YovH3-9s/sddefault.jpg' alt=''><span>▶</span></a>"></iframe>
 		</div>
-		<section class="locales">
-			<h3 class="locales__text visually-hidden">Выбор языка/Languages</h3>
-			
-			<a class="locales__lang locales__lang_ru" href="web.html">RU</a>
-			<a class="locales__lang locales__lang_en" href="en/web.html">EN</a>
-			
-		</section>
-	</aside>
-</header>
-	<main class="main" id="main">
-		<article class="section page__section">
-			<h1 class="page__heading">Курс "Создание и верстка веб-сайтов"</h1>
-<h2><a class="anchor-link" id="teaser" href="#teaser">Тизер курса</a></h2>
-<iframe class="course-video" width="560" height="315" src="https://www.youtube.com/embed/6Z_YovH3-9s" title="последнее видео на канале" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href='https://www.youtube.com/embed/6Z_YovH3-9s?autoplay=1'><img src='https://i.ytimg.com/vi/6Z_YovH3-9s/sddefault.jpg' alt=''><span>▶</span></a>"></iframe>
-<h2><a class="anchor-link" id="about" href="#about">О курсе</a></h2>
-<p class="page__text">В курс входит начало изучения фронтенда, то есть основ HTML/CSS и веб-верстки, работа с макетом, начало JavaScript, использование Github Pages в качестве хостинга.</p>
-<p class="page__text">Вы узнаете, как устроены веб-сайты, научитесь создавать их с нуля, верстать по дизайнерскому макету, выкладывать на хостинг и пользоваться разнообразными инструментами разработки.</p>
-<h2><a class="anchor-link" id="why-this" href="#why-this">Почему этот курс?</a></h2>
-<ul class="points-list">
-	<li>
-		<strong class="points-list__point">Актуальные знания</strong>
-		<p class="points-list__text">Вы научитесь современным версиям языков и лучшим практикам. При этом я показываю и устаревшие практики, с которыми вы можете столкнуться в реальности.</p>
-	</li>
-	<li>
-		<strong class="points-list__point">Сбалансированное обучение</strong>
-		<p class="points-list__text">Материал начинается с самых основ и усложняется постепенно. Теория и практика даются вместе. Я показываю на занятиях, как пишется живой код, а не статичные слайды (как это часто бывает).</p>
-	</li>
-	<li>
-		<strong class="points-list__point">Не только hard skills</strong>
-		<p class="points-list__text">Помимо языков HTML, CSS, JS и других технических инструментов, вы также научитесь важным для любого студента вещам: как и где искать информацию, как эффективнее учиться, как развивалась веб-разработка.</p>
-	</li>
-	<li>
-		<strong class="points-list__point">Опыт</strong>
-		<p class="points-list__text">Я работал во множестве учебных заведений для разработчиков и использую этот ценный опыт для создания лучшего образования. То есть перенимаю лучшее и учусь на чужих ошибках:)</p>
-	</li>
-	<li>
-		<strong class="points-list__point">Мотивация автора</strong>
-		<p class="points-list__text">Я начал заниматься образованием, потому что сам сталкивался с проблемами и не самым качественным обучением. Мне хочется помогать новичкам и давать им наиболее качественное образование.</p>
-	</li>
-	<li>
-		<strong class="points-list__point">Продолжение обучения</strong>
-		<p class="points-list__text">В конце курса студентам дается ссылка на <a href="https://vallek.github.io/web-links/">обновляемый список материалов</a> для продолжения обучения. Часть этих ссылок дается в процессе.</p>
-	</li>
-</ul>
-<h2><a class="anchor-link" id="course-plan" href="#course-plan">Программа курса</a></h2>
-<p class="page__text">Программа постоянно дорабатывается и может отличаться от приведенной ниже.</p>
-<p class="page__text">В первом пункте вы найдете ссылки на две презентации, которые я использую на курсе. Кроме того в программу входит самостоятельные лекции и вебинары (ссылки внутри), которые я уже читаю в разных учебных заведениях.</p>
-<p class="page__text">(кликните на пункт, чтобы узнать подробности)</p>
-<ol class="course">
-	<li class="course__item course__item_close">
-		<button class="course__heading">Вводное занятие</button>
-		<ol class="course__content">
-			<li><a href="https://vallek.github.io/web-pres/learning.html">Как эффективнее учиться</a></li>
-			<li><a href="https://vallek.github.io/web-pres/internet.html">Как устроен Интернет</a></li>
-			<li>Начало HTML (язык, синтаксис)</li>
-			<li>Редакторы кода</li>
-			<li>Первые элементы (p, h1-h6, a, img)</li>
-		</ol>	
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Основы HTML</button>
-		<ol class="course__content">
-			<li>Вложенность</li>
-			<li>Представление текста (em, strong, q, blockquote)</li>
-			<li>Представление данных (списки, таблицы)</li>
-			<li>Начало CSS (первые свойства, стили браузеров)</li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">HTML формы + основы CSS</button>
-		<ol class="course__content">
-			<li>Селекторы</li>
-			<li>Каскадность, специфичность, наследование</li>
-			<li>Источники стилей, переопределение</li>
-			<li>Инструменты разработчика, DOM</li>
-			<li>Ввод и отправка данных: формы и кнопки</li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Поиск информации</button>
-		<ol class="course__content">
-			<li><a href="/Portfolio/pages/projects/search.html">Лекция "Как эффективно искать информацию"</a></li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Продолжение основ CSS</button>
-		<ol class="course__content">
-			<li>Основы раскладки, display, поток</li>
-			<li>Box Model, отступы</li>
-			<li>Позиционирование</li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Фигма/ФШ для верстальщика</button>
-		<ol class="course__content">
-			<li><a href="/Portfolio/pages/projects/figma.html">Лекция "Фигма для верстальщика"</a></li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Современные методы верстки и начало верстки учебного макета</button>
-		<ol class="course__content">
-			<li>Flexbox</li>
-			<li>Планирование, работа с макетом в Фигме</li>
-			<li>Начало верстки по макету</li>
-			<li>Семантические элементы (header, main и footer)</li>
-		</ol>					
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Продолжение верстки учебного макета</button>
-		<ol class="course__content">
-			<li>Подключение шрифтов</li>
-			<li>Создание нескольких страниц</li>
-			<li>Ссылки между страницами</li>
-			<li>Навигация (nav)</li>
-			<li>Подключение и редактирование SVG</li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Основы адаптивной верстки</button>
-		<ol class="course__content">
-			<li>Адаптивная верстка</li>
-			<li>Резиновая верстка</li>
-			<li>Медиа-выражения</li>
-			<li>Тестирование на разных браузерах</li>
-		</ol>					
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Эволюция раскладок</button>
-		<ol class="course__content">
-			<li><a href="/Portfolio/pages/projects/layouts.html">Лекция "Эволюция раскладок"</a></li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">JavaScript</button>
-		<ol class="course__content">
-			<li>От кода до результата  (critical rendering path)</li>
-			<li>Подключение JavaScript</li>
-			<li>Написание JS скрипта для кнопки меню</li>
-		</ol>					
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Серверы и онлайн-сервисы</button>
-		<ol class="course__content">
-			<li>Типы сайтов по методу сборки</li>
-			<li>Серверы</li>
-			<li>CMS</li>
-			<li>Использование Github Pages в качестве сервера</li>
-			<li>Онлайн сервисы для тестирования сайта (проверка ошибок, тест скорости)</li>
-		</ol>					
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Завершение верстки, SEO, подключение иконок, ответы на вопросы</button>
-		<ol class="course__content">
-			<li>Вставка видео и интерактивных карт</li>
-			<li>Что нужно знать про SEO</li>
-			<li>Фавиконки, генераторы, форматы</li>
-			<li>Ответы на вопросы</li>
-			<li>Продолжение обучения</li>
-			<li>Поиск работы</li>
-		</ol>					
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Дополнительные скринкасты/вебинары</button>
-		<ol class="course__content">
-			<li>Подготовка к курсу (какие знания и программы понядобятся)</li>
-			<li>Цвет (цифровой цвет, цветовые модели)</li>
-			<li>Редакторы кода (начало работы, настройка, расширения)</li>
-			<li><a href="https://youtu.be/7w9K34oL_LE">Можно ли вложить один элемент в другой</a></li>
-			<li><a href="../projects/pop-mistakes.html">Популярные ошибки и как их избегать</a></li>
-			<li>Инструменты разработчика в браузерах</li>
-			<li>Форматы изображений</li>
-			<li>Работа со шрифтами (семейства, подключение, свойства)</li>
-			<li><a href="../projects/bem.html">Введение в методологию БЭМ</a></li>
-			<li><a href="../projects/git.html">Система контроля версий Git</a></li>
-		</ol>					
-	</li>
-</ol>
-<p>Полный список всех отдельных лекций и вебинаров можно найти <a href="/Portfolio/pages/projects/all-lectures.html">на отдельной странице</a>.</p>
-<h2><a class="anchor-link" id="practice" href="#practice">Дополнительная практика</a></h2>
-<h3>Для учебных заведений с код-ревьюерами/наставниками</h3>
-<p class="page__text">Предусмотрена дополнительная практика в виде верстки одного из макетов, с которыми я работаю (<a href="https://vallek.github.io/agency-landing/index.html">Agency</a> или <a href="https://vallek.github.io/e-comm/index.html">E-comm</a>). Возможно использование нового макета от меня или от учебного заведения по договоренности (это увеличит срок разработки учебной программы).</p>
-<h3>Для учебных заведений без ревью/для групп студентов</h3>
-<p class="page__text">Возможен вариант без ручной проверки кода. Вместо нее я буду проводить мастерклассы с постепенной версткой. На каждом мастерклассе верстается одна секция макета. Также я рассматриваю популярные ошибки, которые я встречаю у студентов и отвечаю на вопросы.</p>
-<h2><a class="anchor-link" id="course-places" href="#course-places">Где проводился</a></h2>
-<ul class="page__text">
-	<li><a href="/Portfolio/pages/jobs/socins.html">Социально-экономический институт.</a> Первая версия курса, длительность около 30 ак. ч., несколько групп.</li>
-	<li><a href="/Portfolio/pages/jobs/basis.html">Учебный центр Базис.</a> Следующая итерация, длительность около 40 ак. ч., несколько групп.</li>
-	<li><a href="/Portfolio/pages/jobs/banana.html">Digital Banana.</a> Версия курса для старшеклассников, длительность около 24 часов.</li>
-	<li><a href="/Portfolio/pages/jobs/skillf.html">Skillfactory.</a> Проводил лекции курса и все вебинары, как отдельные занятия.</li>
-	<li><a href="/Portfolio/pages/jobs/innopolis.html">Университет Иннополис.</a> Разработал и провел программу курса на 120 ак. часов живых лекций (всего 256 с дз), сертифицированную У20.35.</li>
-	<li><a href="/Portfolio/pages/jobs/involta.html">Инвольта Образование.</a> Разработал программу курса на 120 ак. часов живых лекций (всего 256 с дз), сертифицированную У20.35.</li>
-	<li><a href="/Portfolio/pages/jobs/sd.html">Содействие занятости.</a> Разработал программу курса на 120 ак. часов живых лекций</li>
-</ul>
-<p class="page__about course-sign-up">Записаться на курс можно <a href="../lectures-sign-up/web-sign-up.html">на отдельной странице</a></p>
-<h2><a class="anchor-link" id="check-first" href="#check-first">Посмотрите первое занятие бесплатно!</a></h2>
-<iframe class="course-video" width="560" height="315" src="https://www.youtube.com/embed/vJQGs4nMRrQ" title="последнее видео на канале" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href='https://www.youtube.com/embed/vJQGs4nMRrQ?autoplay=1'><img src='https://i.ytimg.com/vi/vJQGs4nMRrQ/sddefault.jpg' alt=''><span>▶</span></a>"></iframe>
+		<article class="action header__action">
+			<a class="action-button action-button_email" href="mailto:vwebdis@gmail.com">vwebdis@gmail.com</a>
+			<a class="action-button action-button_tm" href="https://t.me/webval">t.me/webval</a>
 		</article>
-		
-<aside class="side-column">
-
-	
-	<section class="section side-column__section consult">
-		<h2 class="section__heading consult__heading">Запишитесь на консультацию</h2>
-		<a class="sign-up-link" href="/Portfolio/pages/lectures-sign-up/consult-sign-up.html">На страницу записи</a>
-	</section>
-	
-	<section class="section side-column__section video">
-		<h2 class="section__heading">Последний видосик<br> <a href="https://www.youtube.com/channel/UCzS4sE_0ltfSz6qx_FUCTdA">на канале</a></h2>
-		<iframe class="video__last-video" width="350" height="250" src="https://www.youtube.com/embed/0v7pdd4za6s" title="последнее видео на канале" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden;}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}a:focus-visible span{outline: 3px dashed rgb(255, 19, 255);outline-offset: -5px;}</style><a href='https://www.youtube.com/embed/0v7pdd4za6s?autoplay=1'><img src='https://i.ytimg.com/vi/0v7pdd4za6s/sddefault.jpg' alt=''><span>▶</span></a>"></iframe>
-	</section>
-	<section class="section side-column__section skills">
-		<h2 class="section__heading"><a href="/Portfolio/pages/site/skills.html">Умею</a></h2>
-		<ul class="skills__list">
-			<li class="skills__skill skills__skill_big">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#html">HTML</a>
-			</li>
-			<li class="skills__skill skills__skill_big">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#html">CSS</a>
-			</li>
-			<li class="skills__skill skills__skill_big">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#js">JavaScript</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#bem">БЭМ</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#git">Git/Github flow</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#jekyll">Jekyll</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#figma">Figma</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#ph">Фотошоп</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#teach">Образование</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#search">Поиск информации</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#other">Веб-дизайн, цветокоррекция, коллажи</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#english">Английский язык (говорю, пишу, читаю)</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#marketing">Маркетинг, реклама</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#plan">Организация и планирование работы</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/skills.html#text">Работа с текстом</a>
-			</li>
-		</ul>
-	</section>
-	<section class="section side-column__section">
-		<h2 class="section__heading">Последние записи<br> <a href="https://vallek.github.io/">в блоге</a></h2>
-		<iframe loading="lazy" sandbox="allow-popups" class="last-posts" src="https://vallek.github.io/last-posts.html" title="Последние записи в блоге"></iframe>
-	</section>
-</aside>
+	</header>
+	<main class="main">
+		<section class="section section_with-img intro">
+			<div class="section__text">
+				<h2 class="section-heading" id="about"><a class="anchor-link" href="#about">О курсе</a></h2>
+				<p class="section-p">В курс входит начало изучения фронтенда, то есть веб-верстка, основы языков HTML и CSS, работа с макетами в Фигме, начало JavaScript, использование Github Pages в качестве хостинга и многое другое.</p>
+			</div>
+			<img class="section__image section__image_intro" src="/Portfolio/img/courses/web/frontend.png" alt="" width="300" height="300">
+		</section>
+		<section class="section section_with-img goal">
+			<img class="section__image" src="/Portfolio/img/courses/web/frontend-screen.png" alt="" width="300" height="300">
+			<div class="section__text">
+				<h2 class="section-heading">Чему вы сможете научиться</h2>
+				<p class="section-p">Вы узнаете, как устроены веб-сайты, научитесь создавать их с нуля, верстать по дизайнерскому макету, оживлять, выкладывать на хостинг и пользоваться разнообразными инструментами разработки.</p>
+			</div>
+		</section>
+		<section class="section section_with-img who">
+			<div class="section__text">
+				<h2 class="section-heading">Для кого</h2>
+				<p class="section-p">Курс подойдет всем, кто решил начать карьеру во фронтенде, стать верстальщиком, fullstack разработчиком или реализовать свой проект. Студентам и тем, кто хочет сменить профессию. А также специалистам смежных специальностей: веб-дизайнерам, бэкэнд программистам, маркетологам и менеджерам, которые хотят расширить свои навыки и лучше понимать веб-разработку.</p>
+				<p class="section-p">Курс рассчитан на абсолютных новичков. Вам не нужно ничего знать про веб-разработку и устройство Интернета. Но нужно быть уверенным пользователем ПК.</p>
+			</div>
+			<img class="section__image" src="/Portfolio/img/courses/web/graduates.png" alt="" width="300" height="300">
+		</section>
+		<section class="section why">
+			<h2 class="section-heading" id="pros"><a class="anchor-link" href="#pros">Почему этот курс</a></h2>
+			<ul class="points-list">
+				<li class="points-list__item">
+					<strong class="points-list__point">Актуальные знания</strong>
+					<p class="points-list__text">Вы научитесь современным версиям языков и лучшим практикам. При этом я показываю и устаревшие практики, с которыми вы можете столкнуться в реальности.</p>
+				</li>
+				<li class="points-list__item">
+					<strong class="points-list__point">Сбалансированное обучение</strong>
+					<p class="points-list__text">Материал начинается с самых основ и усложняется постепенно. Теория и практика даются вместе. Я показываю на занятиях, как пишется живой код, а не статичные слайды (как это часто бывает).</p>
+				</li>
+				<li class="points-list__item">
+					<strong class="points-list__point">Не только hard skills</strong>
+					<p class="points-list__text">Помимо языков HTML, CSS, JS и других технических инструментов, вы также научитесь важным для любого студента вещам: как и где искать информацию, как эффективнее учиться, как развивалась веб-разработка.</p>
+				</li>
+				<li class="points-list__item">
+					<strong class="points-list__point">Опыт</strong>
+					<p class="points-list__text">Я работал во множестве учебных заведений для разработчиков и использую этот ценный опыт для создания лучшего образования. То есть перенимаю лучшее и учусь на чужих ошибках:)</p>
+				</li>
+				<li class="points-list__item">
+					<strong class="points-list__point">Мотивация автора</strong>
+					<p class="points-list__text">Я начал заниматься образованием, потому что сам сталкивался с проблемами и не самым качественным обучением. Мне хочется помогать новичкам и давать им наиболее качественное образование.</p>
+				</li>
+				<li class="points-list__item">
+					<strong class="points-list__point">Продолжение обучения</strong>
+					<p class="points-list__text">В конце курса студентам дается ссылка на <a href="https://vallek.github.io/web-links/">обновляемый список материалов</a> для продолжения обучения. Часть этих ссылок дается в процессе.</p>
+				</li>
+			</ul>
+		</section>
+		<section class="section skills card">
+			<h2 class="section-heading" id="skills"><a class="anchor-link" href="#skills">Навыки, языки и инструменты</a></h2>
+			<ul class="card__list card__list_skills">
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_contain card__image_html" src="/Portfolio/img/courses/web/html-logo.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<span class="card__title">HTML</span>
+						<p>Язык разметки для создания содержимого, структуры и смысла</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_contain card__image_css" src="/Portfolio/img/courses/web/css-logo.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<span class="card__title">CSS</span>
+						<p>Язык стилей для верстки</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image" src="/Portfolio/img/courses/web/js-logo.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<span class="card__title">JavaScript</span>
+						<p>Язык программирования для придания интерактивности</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image" src="/Portfolio/img/courses/web/figma.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<span class="card__title">Figma</span>
+						<p>Графический редактор для создания макетов и верстки по ним</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image" src="/Portfolio/img/courses/web/vs_code.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<span class="card__title">Редактор кода VS Code</span>
+						<p>Основной инструмент разработки</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image" src="/Portfolio/img/projects/devtools.webp" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<span class="card__title">Инструменты разработки в браузерах</span>
+						<p>Именно в браузере работает ваш код, в них же тестируют результат работы</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_contain" src="/Portfolio/img/courses/web/world.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<span class="card__title">Устройство сети Интернет</span>
+						<p>Основы устройства Интернета и веба для новичков</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image" src="/Portfolio/img/projects/search.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<span class="card__title">Поиск информации</span>
+						<p>Один из ключевых навыков для любого разработчика</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_contain" src="/Portfolio/img/courses/web/good-bad.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<span class="card__title">Лучшие и худшие практики</span>
+						<p>Что стоит и не стоит делать в веб-разработке</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="section section_with-img practice">
+			<div class="section__text">
+				<h2 class="section-heading" id="practice"><a class="anchor-link" href="#practice">Практика</a></h2>
+				<p class="section-p">Практика состоит из веб-верстки по дизайнерским макетам. В короткой версии курса студенты верстают один макет. В расширенной - два: учебный и полноценный.</p>
+				<p class="section-p">В данный момент я работаю с тремя макетами: учебным от меня, <a href="https://vallek.github.io/agency-landing/index.html">Agency</a> попроще и <a href="https://vallek.github.io/e-comm/index.html">E-comm</a> посложнее. Возможно использование нового макета от меня или от учебного заведения по договоренности (это увеличит срок разработки учебной программы).</p>
+				<p class="section-p">В зависимости от желаемой сложности студенты могут верстать такой же макет, как преподаватель или другой.</p>
+				<h3>Для учебных заведений с код-ревьюерами/наставниками</h3>
+				<p class="section-p">Практика оценивается по критериям, подготовленным для каждого макета. Также у наставников будет доступ к готовой верстке.</p>
+				<h3>Для учебных заведений без ревью/для групп студентов</h3>
+				<p class="section-p">Возможен вариант без ручной проверки кода. Вместо нее я буду проводить мастерклассы с постепенной версткой. На каждом мастерклассе верстается одна секция макета. Также я рассматриваю популярные ошибки, которые я встречаю у студентов и отвечаю на вопросы.</p>
+			</div>
+			<div class="practice__images">
+				<img class="section__image section__image_back" src="/Portfolio/img/works/group.jpg" alt="" width="300" height="300">
+				<img class="section__image" src="/Portfolio/img/works/agency.webp" alt="" width="300" height="300">
+				<img class="section__image section__image_front" src="/Portfolio/img/works/e-comm.webp" alt="" width="300" height="300">
+			</div>
+		</section>
+		<section class="section">
+			<h2 class="section-heading" id="plan"><a class="anchor-link" href="#plan">Программа курса</a></h2>
+			<p class="page__text">Программа постоянно дорабатывается и может отличаться от приведенной ниже.</p>
+			<p class="page__text">В первом пункте вы найдете ссылки на две презентации, которые я использую на курсе. Кроме того в программу входит самостоятельные лекции и вебинары (ссылки внутри), которые я уже читаю в разных учебных заведениях.</p>
+			<p class="page__text">(кликните на пункт, чтобы узнать подробности)</p>
+			<ol class="course">
+				<li class="course__item course__item_close">
+					<button class="course__heading">Вводное занятие</button>
+					<ol class="course__content">
+						<li><a href="https://vallek.github.io/web-pres/learning.html">Как эффективнее учиться</a></li>
+						<li><a href="https://vallek.github.io/web-pres/internet.html">Как устроен Интернет</a></li>
+						<li>Начало HTML (язык, синтаксис)</li>
+						<li>Редакторы кода</li>
+						<li>Первые элементы (p, h1-h6, a, img)</li>
+					</ol>	
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Основы HTML</button>
+					<ol class="course__content">
+						<li>Вложенность</li>
+						<li>Представление текста (em, strong, q, blockquote)</li>
+						<li>Представление данных (списки, таблицы)</li>
+						<li>Начало CSS (первые свойства, стили браузеров)</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">HTML формы + основы CSS</button>
+					<ol class="course__content">
+						<li>Селекторы</li>
+						<li>Каскадность, специфичность, наследование</li>
+						<li>Источники стилей, переопределение</li>
+						<li>Инструменты разработчика, DOM</li>
+						<li>Ввод и отправка данных: формы и кнопки</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Поиск информации</button>
+					<ol class="course__content">
+						<li><a href="/Portfolio/pages/projects/search.html">Лекция "Как эффективно искать информацию"</a></li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Продолжение основ CSS</button>
+					<ol class="course__content">
+						<li>Основы раскладки, display, поток</li>
+						<li>Box Model, отступы</li>
+						<li>Позиционирование</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Фигма/ФШ для верстальщика</button>
+					<ol class="course__content">
+						<li><a href="/Portfolio/pages/projects/figma.html">Лекция "Фигма для верстальщика"</a></li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Современные методы верстки и начало верстки учебного макета</button>
+					<ol class="course__content">
+						<li>Flexbox</li>
+						<li>Планирование, работа с макетом в Фигме</li>
+						<li>Начало верстки по макету</li>
+						<li>Семантические элементы (header, main и footer)</li>
+					</ol>					
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Продолжение верстки учебного макета</button>
+					<ol class="course__content">
+						<li>Подключение шрифтов</li>
+						<li>Создание нескольких страниц</li>
+						<li>Ссылки между страницами</li>
+						<li>Навигация (nav)</li>
+						<li>Подключение и редактирование SVG</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Основы адаптивной верстки</button>
+					<ol class="course__content">
+						<li>Адаптивная верстка</li>
+						<li>Резиновая верстка</li>
+						<li>Медиа-выражения</li>
+						<li>Тестирование на разных браузерах</li>
+					</ol>					
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Эволюция раскладок</button>
+					<ol class="course__content">
+						<li><a href="/Portfolio/pages/projects/layouts.html">Лекция "Эволюция раскладок"</a></li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">JavaScript</button>
+					<ol class="course__content">
+						<li>От кода до результата  (critical rendering path)</li>
+						<li>Подключение JavaScript</li>
+						<li>Написание JS скрипта для кнопки меню</li>
+					</ol>					
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Серверы и онлайн-сервисы</button>
+					<ol class="course__content">
+						<li>Типы сайтов по методу сборки</li>
+						<li>Серверы</li>
+						<li>CMS</li>
+						<li>Использование Github Pages в качестве сервера</li>
+						<li>Онлайн сервисы для тестирования сайта (проверка ошибок, тест скорости)</li>
+					</ol>					
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Завершение верстки, SEO, подключение иконок, ответы на вопросы</button>
+					<ol class="course__content">
+						<li>Вставка видео и интерактивных карт</li>
+						<li>Что нужно знать про SEO</li>
+						<li>Фавиконки, генераторы, форматы</li>
+						<li>Ответы на вопросы</li>
+						<li>Продолжение обучения</li>
+						<li>Поиск работы</li>
+					</ol>					
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Дополнительные скринкасты/вебинары</button>
+					<ol class="course__content">
+						<li>Подготовка к курсу (какие знания и программы понядобятся)</li>
+						<li>Цвет (цифровой цвет, цветовые модели)</li>
+						<li>Редакторы кода (начало работы, настройка, расширения)</li>
+						<li><a href="https://youtu.be/7w9K34oL_LE">Можно ли вложить один элемент в другой</a></li>
+						<li><a href="../projects/pop-mistakes.html">Популярные ошибки и как их избегать</a></li>
+						<li>Инструменты разработчика в браузерах</li>
+						<li>Форматы изображений</li>
+						<li>Работа со шрифтами (семейства, подключение, свойства)</li>
+						<li><a href="../projects/bem.html">Введение в методологию БЭМ</a></li>
+						<li><a href="../projects/git.html">Система контроля версий Git</a></li>
+					</ol>					
+				</li>
+			</ol>
+			<p class="section-p">Полный список всех отдельных лекций и вебинаров можно найти <a href="/Portfolio/pages/projects/all-lectures.html">на отдельной странице</a>.</p>
+		</section>
+		<article class="action action_bottom">
+			<a class="action-button action-button_email" href="mailto:vwebdis@gmail.com">vwebdis@gmail.com</a>
+			<a class="action-button action-button_tm" href="https://t.me/webval">t.me/webval</a>
+		</article>
+		<section class="section places card">
+			<h2 class="section-heading" id="places"><a class="anchor-link" href="#places">Где проводился</a></h2>
+			<ul class="card__list card__list_places">
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places card__image_contain" src="/Portfolio/img/jobs/innopolis.webp" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title" href="/Portfolio/pages/jobs/innopolis.html">Университет Иннополис</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places card__image_contain" src="/Portfolio/img/jobs/sd-logo.webp" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title" href="/Portfolio/pages/jobs/sd.html">Содействие занятости</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places" src="/Portfolio/img/jobs/involta.webp" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title" href="/Portfolio/pages/jobs/involta.html">Инвольта Образование</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places" src="/Portfolio/img/jobs/skillf.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title" href="/Portfolio/pages/jobs/skillf.html">Skillfactory</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places" src="/Portfolio/img/jobs/banana.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title" href="/Portfolio/pages/jobs/banana.html">Digital Banana.</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places" src="/Portfolio/img/jobs/basis.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title" href="/Portfolio/pages/jobs/basis.html">Учебный центр Базис.</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places" src="/Portfolio/img/jobs/socins.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title" href="/Portfolio/pages/jobs/socins.html">Социально-экономический институт.</a> 
+					</div>
+				</li>
+			</ul>
+		</section>
 	</main>
-		<footer class="footer">
-	<p class="copyright footer__copyright">&copy; 2018—2023 <a href="mailto:vwebdis@gmail.com">Валерий Хаслер</a>. Собрано на Jekyll</p>
-	<div class="attribution footer__attribution">
-		Icons made by <a class="attribution__link" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a class="attribution__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-		<a class="attribution__link" href="https://www.freepik.com/free-photos-vectors/watercolor">Watercolor vector created by creativelyab - www.freepik.com</a><br>
-		<a class="attribution__link" href='https://www.freepik.com/vectors/web'>Web vector created by stories - www.freepik.com</a>
-		<a class="attribution__link" href="https://www.freepik.com/vectors/texture">Texture vector created by macrovector - www.freepik.com</a>
-		Icons made by <a class="attribution__link" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a class="attribution__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-	</div>
-</footer>
-  </body>
+	<footer class="footer">
+		<span class="section-p footer__copy">© 2018—2023 Валерий Хаслер &MediumSpace;</span>
+		<span class="footer__attribution"><a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Freepik - Flaticon</a><a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Flat Icons - Flaticon</a><a href="https://www.flaticon.com/free-icons/study" title="study icons">Study icons created by Chanut-is-Industries - Flaticon</a><a href="https://www.flaticon.com/free-icons/experience" title="experience icons">Experience icons created by Freepik - Flaticon</a><a href="https://www.flaticon.com/free-icons/world" title="world icons">World icons created by Freepik - Flaticon</a></span>
+	</footer>
+</body>
 </html>
