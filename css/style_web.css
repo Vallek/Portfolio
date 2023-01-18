@@ -515,7 +515,7 @@ a.avatar:hover {
 
 .section__image_back {
 	transition: transform 1s ease;
-	transform: translate(5px, -5px);
+	transform: translate(5px, -3px);
 }
 
 .section__image_front {
@@ -646,7 +646,7 @@ a.avatar:hover {
 
 /* JS */
 .scroll-back {
-	transform: translate(40px, -40px);
+	transform: translate(40px, -37px);
 }
 
 .scroll-front {
