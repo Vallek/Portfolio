@@ -661,6 +661,10 @@ a.avatar:hover {
 	background-color: #3052d8;
 }
 
+.card__title_place {
+	font-size: 1em;
+}
+
 /* Footer */
 .footer {
 	position: relative;
