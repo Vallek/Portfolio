@@ -8,16 +8,6 @@
 	url('../fonts/inter-v12-latin_cyrillic-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* inter-200 - latin_cyrillic */
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 200;
-	src: local(''),
-	url('../fonts/inter-v12-latin_cyrillic-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('../fonts/inter-v12-latin_cyrillic-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 /* inter-300 - latin_cyrillic */
 @font-face {
 	font-family: 'Inter';
@@ -36,16 +26,6 @@
 	src: local(''),
 	url('../fonts/inter-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
 	url('../fonts/inter-v12-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* inter-500 - latin_cyrillic */
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 500;
-	src: local(''),
-	url('../fonts/inter-v12-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('../fonts/inter-v12-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* inter-700 - latin_cyrillic */
@@ -435,12 +415,49 @@ a.avatar:hover {
 	object-fit: contain;
 }
 
-.card__image_html {
+.card_html {
+	color: #000;
 	background-color: rgb(226, 212, 14);
 }
 
-.card__image_css {
+.card_css {
+	color: #000;
 	background-color: rgb(14, 124, 226);
+}
+
+.card_js {
+	color: #000;
+	background-color: #f7e018;
+}
+
+.card_figma {
+	color: #fff;
+	background-color: #1e1e1e;
+}
+
+.card_vs {
+	color: #000;
+	background-color: #38aaf2;
+}
+
+.card_dev {
+	color: #fff;
+	background-color: #0c0c0d;
+}
+
+.card_web {
+	color: #000;
+	background-color: #6bbef6;
+}
+
+.card_search {
+	color: #fff;
+	background-color: #d9575c;
+}
+
+.card_goodbad {
+	color: #000;
+	background-color: #e6f7fe;
 }
 
 .card__back {
@@ -463,8 +480,20 @@ a.avatar:hover {
 	transform: rotateY(-90deg);
 }
 
-.card__back > a,
+.card__title {
+	display: block;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.card__back > span {
+	font-weight: 700;
+	font-size: 1em;
+}
+
 .card__back > p {
+	font-weight: 400;
 	font-size: 1em;
 }
 
@@ -476,13 +505,6 @@ a.avatar:hover {
 	transform: rotateY(0deg);
 	z-index: 1;
 	visibility: visible;
-}
-
-.card__title {
-	display: block;
-	margin-bottom: 1em;
-	text-align: center;
-	font-size: 1.2em;
 }
 
 /* Practice */
