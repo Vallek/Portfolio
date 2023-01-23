@@ -1,23 +1,24 @@
-var playButton = document.querySelectorAll('.play-button');
+const playButton = document.querySelectorAll('.play-button');
 
 playButton.forEach(
     function name(item) {
-        item.addEventListener('click', showVideo)
+        item.addEventListener('click', showVideo);
     }
-)
+);
 
 function showVideo(item) {
-    thisClass = item.target.classList[1];
-    video = document.querySelector('.' + thisClass);
-    video.parentElement.style.display = 'block'; 
-    video.style.display = 'block';
+    let thisClass = item.target.classList[1];
+    let video = document.querySelector('.' + thisClass);
+    video.parentElement.classList.add('show');
+    video.classList.add('show');
 }
 
-var outsideVideo = document.querySelector('.video-wrap');
+const outsideVideo = document.querySelector('.video-wrap');
 
 outsideVideo.addEventListener('click', closeVideo);
 function closeVideo() {
+    let video = document.querySelector('.tip-video.show');
     video.pause();
-    video.parentElement.style.display = 'none'; 
-    video.style.display = 'none';
+    video.parentElement.classList.remove('show'); 
+    video.classList.remove('show');
 }
