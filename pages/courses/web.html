@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="/Portfolio/css/normalize.css">
 	
 		<link rel="stylesheet" href="/Portfolio/css/style_web.css">
+		<script defer src="/Portfolio/js/web-menu-popup.js"></script>
 		<script defer src="/Portfolio/js/accordion.js"></script>
 		<script defer src="/Portfolio/js/web-scroll-anim.js"></script>
 		
@@ -28,7 +29,7 @@
 	<header class="header">
 		<div class="header__menu">
 			<a class="avatar" href="/Portfolio/index.html" aria-label="Ссылка на главную" title="Ссылка на главную"><img class="avatar__image" src="/Portfolio/img/ava.jpg" alt="аватарка с фото автора" width="80" height="80">Курс Валеры Хаслера</a>
-			<nav>
+			<nav class="header__nav">
 				<ul class="header__list">
 					<li><a class="header__link" href="#about">О курсе</a></li>
 					<li><a class="header__link" href="#pros">Преимущества</a></li>
@@ -38,6 +39,30 @@
 					<li><a class="header__link" href="#places">Где проводился</a></li>
 				</ul>
 			</nav>
+			<div class="header__popup-menu popup-menu">
+				<input class="popup-menu__input" aria-hidden="true" type="checkbox" id="menustate" />
+				<nav class="popup-menu__nav">
+					<a class="popup-menu__open" role="button" href="#menustate">
+						<span class="visually-hidden ">Open menu</span>
+					</a>
+					<a class="popup-menu__close" role="button" href="#">
+						<span class="visually-hidden ">Close menu</span>
+					</a>
+					<label class="popup-menu__button" for="menustate" aria-hidden="true">
+						<span class="popup-menu__open">≡</span>
+						<span class="popup-menu__close">≡</span>
+					</label>
+					<ul class="popup-menu__list">
+						<li><a class="popup-menu__link" href="#">В начало</a></li>
+						<li><a class="popup-menu__link" href="#about">О курсе</a></li>
+						<li><a class="popup-menu__link" href="#pros">Преимущества</a></li>
+						<li><a class="popup-menu__link" href="#skills">Навыки</a></li>
+						<li><a class="popup-menu__link" href="#practice">Практика</a></li>
+						<li><a class="popup-menu__link" href="#plan">Программа</a></li>
+						<li><a class="popup-menu__link" href="#places">Где&nbsp;проводился</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 		<div class="header__content">
 			<h1 class="header__heading"><span class="header__text_thin">курс</span> Основы Фронтенда</h1>
