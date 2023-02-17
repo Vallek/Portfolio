@@ -35,6 +35,7 @@ function closeMenu() {
 }
 
 window.addEventListener('scroll', scrollHeader);
+window.addEventListener('DOMContentLoaded', scrollHeader);
 menuLink.forEach((el) => {el.addEventListener('click', closeMenu);});
 
 
