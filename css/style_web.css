@@ -254,7 +254,7 @@ a.avatar:hover {
 
 .popup-menu__list {
 	position: absolute;
-	right: -3vw;
+	left: 0;
 	bottom: 0;
 	z-index: 2;
 	transform: translate(0%, 100%);
