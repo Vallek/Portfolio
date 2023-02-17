@@ -17,8 +17,8 @@ document.querySelector('.popup-menu__close').addEventListener('click', (e) => {
 
 const header = document.querySelector('.header');
 const headerMenu = document.querySelector('.header__menu');
-const menuLink = document.querySelector('.popup-menu__link');
 const menuButton = document.querySelector('.popup-menu__button');
+const menuLink = document.querySelectorAll('.popup-menu__link');
 
 function scrollHeader() {
 	let pageTop = header.getBoundingClientRect().top;
@@ -32,10 +32,9 @@ function scrollHeader() {
 
 function closeMenu() {
 	menuButton.click();
-	console.log('aaa');
 }
 
 window.addEventListener('scroll', scrollHeader);
-menuLink.addEventListener('click', closeMenu);
+menuLink.forEach((el) => {el.addEventListener('click', closeMenu);});
 
 
