@@ -146,12 +146,18 @@ p {
 	left: 0;
 	box-sizing: border-box;
 	width: 100%;
-	padding: 0 3vw;
+	padding: 0 1vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 4em;
 	z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+	.header__menu {
+		padding: 0 3vw;
+	}
 }
 
 .header__menu_anim {
