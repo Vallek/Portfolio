@@ -155,13 +155,14 @@ p {
 }
 
 .header__menu_anim {
+	--gap-padding: 0.6em;
 	position: fixed;
 	top: 0;
 	transform: translateY(0%);
 	background-color: rgb(126, 128, 181);
 	background-image: linear-gradient(0deg, #7ac5c5, #7070ca, #48488e);
 	transition: transform 0.5s ease-in;
-	padding: 0.6em 3vw;
+	padding: var(--gap-padding) 3vw;
 }
 
 .avatar {
@@ -229,7 +230,6 @@ a.avatar:hover {
 }
 
 .popup-menu__nav {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: end;
@@ -255,7 +255,7 @@ a.avatar:hover {
 .popup-menu__list {
 	position: absolute;
 	right: -3vw;
-	bottom: -1rem;
+	bottom: 0;
 	z-index: 2;
 	transform: translate(0%, 100%);
 	width: 100vw;
