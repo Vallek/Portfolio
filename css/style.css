@@ -630,8 +630,14 @@ a.avatar:hover {
 }
 
 .job__heading {
+	font-size: 1.2rem;
+	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 0.5em;
+}
+
+.job__title {
+	font-size: 1.3rem;
 }
 
 .job__text {
