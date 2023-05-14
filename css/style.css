@@ -513,6 +513,22 @@ a.avatar:hover {
 	z-index: 1;
 }
 
+.project_new::after {
+	content: 'Новинка';
+	display: inline-block;
+	font-size: 1rem;
+	padding: 0.2em 0.4em;
+	position: absolute;
+	top: -0.5em;
+	right: 0;
+	transform: translateX(1vw) skew(0, -2deg);
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: rgb(21, 145, 17);
+	z-index: 1;
+}
+
 .box-item__image-link {
 	height: 100%;
 	overflow: hidden;
@@ -600,6 +616,11 @@ a.avatar:hover {
 .box-item__image_teachme {
 	object-fit: contain;
 	background-color: #191919;
+}
+
+.box-item__image_header {
+	object-fit: contain;
+	background-color: rgb(246, 248, 250);
 }
 
 .box-item__heading {
