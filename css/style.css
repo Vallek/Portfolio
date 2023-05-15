@@ -63,7 +63,7 @@ a:focus {
 	margin-right: 1.25em;
 }
 
-a.avatar:hover {
+.avatar:hover {
 	outline: 3px dashed var(--text-color);
 	outline-offset: 2px;
 }
