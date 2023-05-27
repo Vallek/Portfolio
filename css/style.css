@@ -623,6 +623,11 @@ a:focus {
 	background-color: rgb(246, 248, 250);
 }
 
+.box-item__image_webdevtips {
+	object-fit: contain;
+	background-color: rgb(39, 37, 38);
+}
+
 .box-item__heading {
 	color: black;
 	font-weight: 400;
