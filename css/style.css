@@ -157,6 +157,14 @@ a:focus {
 	color: var(--text-color);
 }
 
+.hire-me {
+	/* display: none; */
+	white-space: pre;
+	color: white;
+	background-color: var(--accent-color);
+	padding: 0 0.5em;
+}
+
 .locales__text {
 	font-size: 1rem;
 	font-weight: 400;
