@@ -162,7 +162,7 @@ a:focus {
 	white-space: pre;
 	color: white;
 	background-color: var(--accent-color);
-	padding: 0 0.5em;
+	padding: 0 0.3em;
 }
 
 .locales__text {
