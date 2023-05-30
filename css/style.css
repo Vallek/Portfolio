@@ -947,7 +947,6 @@ a:focus {
 
 .course__item_close > .course__content {
     height: 0px;
-    transition: height 1s ease-out;
 	transform: scaleY(0);
 	display: none;
 }
