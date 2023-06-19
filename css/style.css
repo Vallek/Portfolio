@@ -820,6 +820,10 @@ a:focus {
 	margin: 0 0 8px;
 }
 
+.copyright__email {
+	color: black;
+}
+
 .attribution {
 	font-size: 0.8rem;
 	color: rgb(118, 118, 118);
