@@ -359,6 +359,10 @@ a.avatar:hover {
 	text-shadow: none;
 }
 
+.header__text_en {
+	margin-bottom: 0;
+}
+
 .course-video {
 	flex: 0 1 560px;
 	height: 315px;
