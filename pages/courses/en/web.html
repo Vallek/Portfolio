@@ -20,329 +20,544 @@
 	<meta name="description" content="Val's Portfolio - Frontend & Education">
 	<meta name="author" content="Vallek">
 	<link rel="stylesheet" type="text/css" href="/Portfolio/css/normalize.css">
-	<link rel="stylesheet" href="/Portfolio/css/style.css">
-	<script defer src="/Portfolio/js/header.js"></script>
+	
+	<link rel="preload" href="/Portfolio/fonts/inter-v12-latin_cyrillic-100.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/Portfolio/fonts/inter-v12-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/Portfolio/fonts/inter-v12-latin_cyrillic-900.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="/Portfolio/css/style_web.css">
+	<script defer src="/Portfolio/js/web-menu-popup.js"></script>
+	<script defer src="/Portfolio/js/accordion.js"></script>
+	<script defer src="/Portfolio/js/web-scroll-anim.js"></script>
+	
 	<script defer src="/Portfolio/js/popup.js"></script>
-		
-		<script defer src="/Portfolio/js/accordion.js"></script>	
-		
+	
 	<link rel="icon" sizes="16x16" href="/Portfolio/favicons/favicon1.png">
 	<link rel="icon" sizes="32x32" href="/Portfolio/favicons/favicon1.png">
 </head>
-  <body class="page home">   
+	<body class="page">
 	<header class="header">
-	<a class="skip-to-main" href="#main">Skip to main content</a>
-	<div class="header__main">
-		<div class="header__intro">
-			
-			<a class="avatar" href="/Portfolio/en/index.html" aria-label="Ссылка на главную" title="Ссылка на главную"><img class="avatar__image" src="/Portfolio/img/ava.jpg" alt="аватарка с фото автора" width="80" height="80"></a>
-			<span class="header__title">Hi! My name is <span class="header__name">Val</span><br> and this is my <a class="header__home-link" href="/Portfolio/en/index.html">portfolio</a></span>
-				
-			<button class="header__show show">
-				<svg class="show__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				viewbox="0 0 384.97 384.97">
-					<g>
-						<g id="Menu">
-							<path fill="#fff" d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
-							C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"/>
-							<path fill="#fff" d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
-							S379.58,180.455,372.939,180.455z"/>
-							<path fill="#fff" d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
-							c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"/>
-						</g>
-					</g>
-				</svg>
-			</button>
+		<div class="header__menu">
+			<a class="avatar" href="/Portfolio/index.html" aria-label="Ссылка на главную" title="Author's portfolio"><img class="avatar__image" src="/Portfolio/img/ava.jpg" alt="аватарка с фото автора" width="80" height="80">Vallek's course</a>
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li><a class="header__link" href="#">To the top</a></li>
+					<li><a class="header__link" href="#about">About</a></li>
+					<li><a class="header__link" href="#pros">Advantages</a></li>
+					<li><a class="header__link" href="#skills">Skills</a></li>
+					<li><a class="header__link" href="#practice">Practice</a></li>
+					<li><a class="header__link" href="#plan">Plan</a></li>
+					<li><a class="header__link" href="#places">Places</a></li>
+				</ul>
+			</nav>
+			<div class="header__popup-menu popup-menu">
+				<input class="popup-menu__input" aria-hidden="true" type="checkbox" id="menustate" />
+				<nav class="popup-menu__nav">
+					<a class="popup-menu__open" role="button" href="#menustate">
+						<span class="visually-hidden ">Open menu</span>
+					</a>
+					<a class="popup-menu__close" role="button" href="#">
+						<span class="visually-hidden ">Close menu</span>
+					</a>
+					<label class="popup-menu__button" for="menustate" aria-hidden="true">
+						<span class="popup-menu__open">≡</span>
+						<span class="popup-menu__close">≡</span>
+					</label>
+					<ul class="popup-menu__list">
+						<li><a class="popup-menu__link" href="#">To the top</a></li>
+						<li><a class="popup-menu__link" href="#about">About</a></li>
+						<li><a class="popup-menu__link" href="#pros">Advantages</a></li>
+						<li><a class="popup-menu__link" href="#skills">Skills</a></li>
+						<li><a class="popup-menu__link" href="#practice">Practice</a></li>
+						<li><a class="popup-menu__link" href="#plan">Plan</a></li>
+						<li><a class="popup-menu__link" href="#places">Places</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
-			
-	</div>
-	<aside class="header__info visually-hidden">
-		<section class="contacts">
-			<h2 class="visually-hidden">Contacts</h2>
-			<p class="contacts__contact">
-				<strong>Email:</strong>
-				<a href="mailto:vwebdis@gmail.com">vwebdis@gmail.com</a>
-			</p>
-			<p class="contacts__contact">
-				<strong>Telegram:</strong>
-				<a href="https://t.me/webval">@webval</a>
-			</p>
-		</section>
-		<p>I live in Saint-Petersburg, Russia. Work remotely. <span class="hire-me">Looking for a job.</span></p>
-		<div class="social-links">
-			<a class="social-link social-link_github" href="https://github.com/Vallek/" title="Ссылка на гитхаб" aria-label="Ссылка на гитхаб">
-				<img class="social-logo social-logo_github" src="/Portfolio/img/icons/github.svg" width="30" height="30" alt="иконка гитхаба">
-			</a>
-			<a class="social-link social-link_codepen" href="https://codepen.io/vallek/pens/" title="Ссылка на codepen" aria-label="Ссылка на codepen">
-				<img class="social-logo social-logo_codepen" src="/Portfolio/img/icons/codepen.svg" width="30" height="30" alt="иконка codepen">
-			</a>
-			<a class="social-link social-link_youtube" href="https://www.youtube.com/channel/UCzS4sE_0ltfSz6qx_FUCTdA" title="Ссылка на youtube" aria-label="Ссылка на youtube">
-				<img class="social-logo social-logo_youtube" src="/Portfolio/img/icons/youtube.svg" width="30" height="30" alt="иконка ютьюба">
-			</a>
-			<a class="social-link social-link_twitter" href="https://twitter.com/_vallek" title="Ссылка на twitter" aria-label="Ссылка на twitter">
-				<img class="social-logo social-logo_twitter" src="/Portfolio/img/icons/twi.svg" width="30" height="30" alt="иконка твиттера">
-			</a>
+		<div class="header__content">
+			<h1 class="header__heading"><span class="header__text_thin">course</span> Frontend Basics</h1>
+			<iframe class="course-video" width="560" height="315" src="https://www.youtube.com/embed/6Z_YovH3-9s" title="последнее видео на канале" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href='https://www.youtube.com/embed/6Z_YovH3-9s?autoplay=1'><img src='https://i.ytimg.com/vi/6Z_YovH3-9s/sddefault.jpg' alt=''><span>▶</span></a>"></iframe>
 		</div>
-		<section class="locales">
-			<h3 class="locales__text visually-hidden">Выбор языка/Languages</h3>
-			
-			<a class="locales__lang locales__lang_ru" href="../web.html">RU</a>
-			<a class="locales__lang locales__lang_en" href="web.html">EN</a>
-			
-		</section>
-	</aside>
-</header>
-	<main class="main" id="main">
-		<article class="section page__section">
-			<h1 class="page__heading">Frontend Basics Course</h1>
-<h2><a class="anchor-link" id="teaser" href="#teaser">Course teaser</a></h2>
-<iframe class="course-video" width="560" height="315" src="https://www.youtube.com/embed/6Z_YovH3-9s" title="последнее видео на канале" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href='https://www.youtube.com/embed/6Z_YovH3-9s?autoplay=1'><img src='https://i.ytimg.com/vi/6Z_YovH3-9s/sddefault.jpg' alt=''><span>▶</span></a>"></iframe>
-<h2><a class="anchor-link" id="about" href="#about">About this course</a></h2>
-<p class="page__text">The course includes the beginnings of frontend, the basics of HTML/CSS and modern CSS layouts, working with the design templates, a beginnings of JavaScript, using Github Pages as hosting.</p>
-<p class="page__text">You will learn how websites work, how to create them from scratch, make them according to a design template, using hosting to put them online and use a variety of development tools. </p>
-<h2><a class="anchor-link" id="why-this" href="#why-this">Why this course</a></h2>
-<ul class="points-list">
-	<li>
-		<strong class="points-list__point">Current knowledge</strong>
-		<p class="points-list__text">You will learn modern versions of languages and best practices. At the same time, I also show outdated practices that you may encounter in the wild.</p>
-	</li>
-	<li>
-		<strong class="points-list__point">Balanced education</strong>
-		<p class="points-list__text">The course starts from the very basics and gradually becomes more complicated. Theory and practice are given together. I show in class how to write live code, not static slides (as it is often the case). </p>
-	</li>
-	<li>
-		<strong class="points-list__point">Not just hard skills</strong>
-		<p class="points-list__text">In addition to HTML, CSS, JS and other technical tools, you will also learn things that are important for any student: how and where to look for information, how to learn more effectively, how web development has evolved.</p>
-	</li>
-	<li>
-		<strong class="points-list__point">Experience</strong>
-		<p class="points-list__text">I worked at many educational organizations for developers and I'm using this valuable experience to create a better education. I adopt the best and learn from the mistakes of others:)</p>
-	</li>
-	<li>
-		<strong class="points-list__point">Author's motivation</strong>
-		<p class="points-list__text">I started working in education because I myself faced problems and not the best education quality. I want to help newcomers and give them the best possible education.</p>
-	</li>
-	<li>
-		<strong class="points-list__point">Continuing education</strong>
-		<p class="points-list__text">At the end of the course, students are given a link to <a href="https://vallek.github.io/web-links/en/index.html">regularly updated list of frontend links</a> to continue education on your own. Part of these links students will get during the course.</p>
-	</li>
-</ul>
-<p class="page__text">The course is under constant development and may differ from the one below.</p>
-<p class="page__text">In the first paragraph you will find links to presentations that I use in the course. In addition, the program includes independent lectures and webinars (links inside).</p>
-<p class="page__text">(click on an item for details)</p>
-<h2><a class="anchor-link" id="course-plan" href="#course-plan">Course plan</a></h2>
-<ol class="course">
-	<li class="course__item course__item_close">
-		<button class="course__heading">Introduction</button>
-		<ol class="course__content">
-			<li><a href="https://vallek.github.io/web-pres/learning.html">How to study effectively</a></li>
-			<li><a href="https://vallek.github.io/web-pres/internet.html">How web works</a></li>
-			<li>HTML beginnings</li>
-			<li>Code editors</li>
-			<li>First html elements (p, h1-h6, a, img)</li>
-		</ol>	
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">HTML basics</button>
-		<ol class="course__content">
-			<li>Nesting</li>
-			<li>Text markup (em, strong, q, blockquote)</li>
-			<li>Data markup (lists, tables)</li>
-			<li>CSS Basics (first properties, browsers default styles)</li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">HTML forms + CSS basics</button>
-		<ol class="course__content">
-			<li>Selectors</li>
-			<li>Cascade, specificity, inheritance</li>
-			<li>Style sources, redefining styles</li>
-			<li>Devtools, DOM</li>
-			<li>Sending data: forms and buttons</li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Searching info</button>
-		<ol class="course__content">
-			<li><a href="/Portfolio/pages/projects/en/search.html">Lecture: How to search info about frontend</a></li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">CSS basics</button>
-		<ol class="course__content">
-			<li>Layouts basics, display, flow</li>
-			<li>Box Model, margins</li>
-			<li>Positioning</li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Figma for Frontend Developers</button>
-		<ol class="course__content">
-			<li><a href="/Portfolio/pages/projects/en/figma.html">Lecture: Figma for Frontend Developers</a></li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Modern layouts and training site</button>
-		<ol class="course__content">
-			<li>Flexbox</li>
-			<li>Planing your work, working with figma</li>
-			<li>Starting to work on training template</li>
-			<li>Semantic elements (header, main и footer)</li>
-		</ol>					
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Developing training site</button>
-		<ol class="course__content">
-			<li>Fonts</li>
-			<li>Multiple pages and links</li>
-			<li>Navigation (nav, lists for menus)</li>
-			<li>SVG</li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Responsive basics</button>
-		<ol class="course__content">
-			<li>Types of responsive frontend</li>
-			<li>@media rule</li>
-			<li>Cross browser testing</li>
-		</ol>					
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">CSS Layouts evolution</button>
-		<ol class="course__content">
-			<li><a href="/Portfolio/pages/projects/en/layouts.html">Lecture "Evolution of CSS Layouts"</a></li>
-		</ol>
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">JavaScript</button>
-		<ol class="course__content">
-			<li>Critical rendering path</li>
-			<li>Adding JavaScript</li>
-			<li>Writing our first js code for menu button</li>
-		</ol>					
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Backend and online services</button>
-		<ol class="course__content">
-			<li>Ways to built a site</li>
-			<li>Servers</li>
-			<li>CMS</li>
-			<li>Github Pages as frontend hosting</li>
-			<li>Online services for testing (errors, speed)</li>
-		</ol>					
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Finish line, about SEO, favicons, QnA</button>
-		<ol class="course__content">
-			<li>Video and maps (video, iframe)</li>
-			<li>About SEO</li>
-			<li>favicons, formats, online generators</li>
-			<li>Qna</li>
-			<li>Continue studying</li>
-			<li>Finding job</li>
-		</ol>					
-	</li>
-	<li class="course__item course__item_close">
-		<button class="course__heading">Additional webinars</button>
-		<ol class="course__content">
-			<li>Course preparation (what do you need to learn)</li>
-			<li>Web Color (digital color, color models)</li>
-			<li>Code editors</li>
-			<li><a href="https://youtu.be/7w9K34oL_LE">Can I include one html element into another</a></li>
-			<li><a href="/Portfolio/pages/projects/en/pop-mistakes.html">Popular Mistakes and How to Avoid Them</a></li>
-			<li>Devtools</li>
-			<li>Image formats</li>
-			<li>Web fonts (families, adding, properties)</li>
-			<li><a href="/Portfolio/pages/projects/en/bem.html">Introduction to BEM Methodology</a></li>
-			<li><a href="/Portfolio/pages/projects/en/git.html">Introduction to Git</a></li>
-		</ol>					
-	</li>
-</ol>
-<p>You can find list of all webinars <a href="/Portfolio/pages/projects/en/all-lectures.html">on a separate page</a>.</p>
-<h2><a class="anchor-link" id="practice" href="#practice">Additional practice</a></h2>
-<h3>For educational organizations with code reviewers/tutors</h3>
-<p class="page__text">Additional practice is provided in the form of making web-site based on figma template (<a href="https://vallek.github.io/agency-landing/index.html">Agency</a> или <a href="https://vallek.github.io/e-comm/index.html">E-comm</a>). Or any other template provided by me or the organization.</p>
-<h3>For educational organizations without code reviewer/separate groups of students</h3>
-<p class="page__text">An option without manual code review is possible. Instead, I will conduct masterclasses with gradual live demonstration of site development. One section of the template on each masterclass. And also the popular mistakes that I meet with students are considered.</p>
-<p class="page__about course-sign-up course-sign-up_en">You can sign up for the course <a href="../lectures-sign-up/web-sign-up.html">on a separate page</a></p>
-<h2><a class="anchor-link" id="check-first" href="#check-first">Check out first class for free!</a></h2>
-<iframe class="course-video" width="560" height="315" src="https://www.youtube.com/embed/vJQGs4nMRrQ" title="последнее видео на канале" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href='https://www.youtube.com/embed/vJQGs4nMRrQ?autoplay=1'><img src='https://i.ytimg.com/vi/vJQGs4nMRrQ/sddefault.jpg' alt=''><span>▶</span></a>"></iframe>
+		<article class="action header__action">
+			<a class="action-button action-button_email" href="mailto:vwebdis@gmail.com">vwebdis@gmail.com</a>
+			<a class="action-button action-button_tm" href="https://t.me/webval">t.me/webval</a>
 		</article>
-		
-<aside class="side-column">
-
-	
-	<section class="section side-column__section consult consult_en">
-		<h2 class="section__heading consult__heading">Consultation<br> Sign Up</h2>
-		<a class="sign-up-link" href="/Portfolio/pages/lectures-sign-up/consult-sign-up.html">Sign Up Page</a>
-	</section>
-	
-	<section class="section side-column__section video">
-		<h2 class="section__heading">Latest video<br> <a href="https://www.youtube.com/channel/UCzS4sE_0ltfSz6qx_FUCTdA">on youtube channel</a></h2>
-		<iframe class="video__last-video" width="350" height="250" src="https://www.youtube.com/embed/0v7pdd4za6s" title="latest video on youtube" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden;}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}a:focus-visible span{outline: 3px dashed rgb(255, 19, 255);outline-offset: -5px;}</style><a href='https://www.youtube.com/embed/envQ_xm1HJc?autoplay=1'><img src='https://i.ytimg.com/vi/envQ_xm1HJc/sddefault.jpg' alt=''><span>▶</span></a>"></iframe>
-	</section>
-	<section class="section side-column__section skills">
-		<h2 class="section__heading"><a href="/Portfolio/pages/site/en/skills.html">My Skills</a></h2>
-		<ul class="skills__list">
-			<li class="skills__skill skills__skill_big skills__skill_30">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#html">HTML</a>
-			</li>
-			<li class="skills__skill skills__skill_big skills__skill_30">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#html">CSS</a>
-			</li>
-			<li class="skills__skill skills__skill_big skills__skill_30">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#js">JavaScript</a>
-			</li>
-			<li class="skills__skill skills__skill_30">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#bem">BEM</a>
-			</li>
-			<li class="skills__skill skills__skill_30">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#git">Git/Github flow</a>
-			</li>
-			<li class="skills__skill skills__skill_30">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#jekyll">Jekyll</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#figma">Figma</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#ph">Photoshop</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#teach">Education</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#search">Info search</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#other">Web-design, UI/UX</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#english">English (read specs, write, speak)</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#plan">Planning and organizing work</a>
-			</li>
-			<li class="skills__skill">
-				<a class="skills__link" href="/Portfolio/pages/site/en/skills.html#text">Writing</a>
-			</li>
-		</ul>
-	</section>
-	<section class="section side-column__section">
-		<h2 class="section__heading">Latest <a href="https://vallek.github.io/webval-blog/">blog</a> posts</h2>
-		<iframe height="250" loading="lazy" sandbox="allow-popups" class="last-posts" src="https://vallek.github.io/webval-blog/last-posts.html" title="latest blog posts"></iframe>
-	</section>
-</aside>
+	</header>
+	<main class="main">
+		<section class="section section_with-img intro">
+			<div class="section__text">
+				<h2 class="section-heading" id="about"><a class="anchor-link" href="#about">About this course</a></h2>
+				<p class="section-p">The course includes the beginnings of frontend, the basics of HTML/CSS and modern CSS layouts, working with the design templates, a beginnings of JavaScript, using Github Pages as hosting.</p>
+			</div>
+			<img class="section__image section__image_intro" src="/Portfolio/img/courses/web/frontend.png" alt="" width="300" height="300">
+		</section>
+		<section class="section section_with-img goal">
+			<img class="section__image" src="/Portfolio/img/courses/web/frontend-screen.png" alt="" width="300" height="300">
+			<div class="section__text">
+				<h2 class="section-heading">What you will learn</h2>
+				<p class="section-p">You will learn how websites work, how to create them from scratch, make them according to a design template, using hosting to put them online and use a variety of development tools.</p>
+			</div>
+		</section>
+		<section class="section section_with-img who">
+			<div class="section__text">
+				<h2 class="section-heading">Target audience</h2>
+				<p class="section-p">The course is for anyone who wants to start a career in the Frontend, fullstack web developer or build their own project. For students and those who want to change their profession. As well as for related professionals: web designers, backend programmers, marketers and managers who want to expand their skill set and better understand web development.</p>
+				<p class="section-p">The course is designed for absolute beginners. You don't need to know anything about web development and the Internet. But you need to be a confident PC user.</p>
+			</div>
+			<img class="section__image" src="/Portfolio/img/courses/web/graduates.png" alt="" width="300" height="300">
+		</section>
+		<section class="section why">
+			<h2 class="section-heading" id="pros"><a class="anchor-link" href="#pros">Why this course</a></h2>
+			<ul class="points-list">
+				<li class="points-list__item">
+					<strong class="points-list__point">Current knowledge</strong>
+					<p class="points-list__text">You will learn modern versions of languages and best practices. At the same time, I also show outdated practices that you may encounter in the wild.</p>
+				</li>
+				<li class="points-list__item">
+					<strong class="points-list__point">Balanced education</strong>
+					<p class="points-list__text">The course starts from the very basics and gradually becomes more complicated. Theory and practice are given together. I show in class how to write live code, not static slides (as it is often the case). </p>
+				</li>
+				<li class="points-list__item">
+					<strong class="points-list__point">Not just hard skills</strong>
+					<p class="points-list__text">In addition to HTML, CSS, JS and other technical tools, you will also learn things that are important for any student: how and where to look for information, how to learn more effectively, how web development has evolved.</p>
+				</li>
+				<li class="points-list__item">
+					<strong class="points-list__point">Experience</strong>
+					<p class="points-list__text">I worked at many educational organizations for developers and I'm using this valuable experience to create a better education. I adopt the best and learn from the mistakes of others:)</p>
+				</li>
+				<li class="points-list__item">
+					<strong class="points-list__point">Author's motivation</strong>
+					<p class="points-list__text">I started working in education because I myself faced problems and not the best education quality. I want to help newcomers and give them the best possible education.</p>
+				</li>
+				<li class="points-list__item">
+					<strong class="points-list__point">Continuing education</strong>
+					<p class="points-list__text">At the end of the course, students are given a link to <a href="https://vallek.github.io/web-links/en/index.html">regularly updated list of frontend links</a> to continue education on your own. Part of these links students will get during the course.</p>
+				</li>
+			</ul>
+		</section>
+		<section class="section skills card">
+			<h2 class="section-heading" id="skills"><a class="anchor-link" href="#skills">Skills, languages and tools</a></h2>
+			<ul class="card__list card__list_skills">
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_contain card_html" src="/Portfolio/img/courses/web/html-logo.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back card_html">
+						<span class="card__title">HTML</span>
+						<p>Markup language for creating content, structure, and meaning</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face card_css">
+						<img class="card__image card__image_contain" src="/Portfolio/img/courses/web/css-logo.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back card_css">
+						<span class="card__title">CSS</span>
+						<p>Styling language for creating layouts</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face card_js">
+						<img class="card__image" src="/Portfolio/img/courses/web/js-logo.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back card_js">
+						<span class="card__title">JavaScript</span>
+						<p>Programming language to add interactivity</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face card_figma">
+						<img class="card__image" src="/Portfolio/img/courses/web/figma.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back card_figma">
+						<span class="card__title">Figma</span>
+						<p>Graphic editor for creating UI and layouts</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image" src="/Portfolio/img/courses/web/vs_code.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back card_vs">
+						<span class="card__title">VS Code code editor</span>
+						<p>Main tool of any developer</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face card_dev">
+						<img class="card__image" src="/Portfolio/img/projects/devtools.webp" alt="" width="300" height="300">
+					</div>
+					<div class="card__back card_dev">
+						<span class="card__title">Browsers dev tools</span>
+						<p>You write code for browsers and also test the result there</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_contain" src="/Portfolio/img/courses/web/world.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back card_web">
+						<span class="card__title">How Internet works</span>
+						<p>Basics of the Internet and the Web for beginners</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face card_search">
+						<img class="card__image" src="/Portfolio/img/projects/search.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back card_search">
+						<span class="card__title">Information search</span>
+						<p>One of the key skills for any developer</p>
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_contain" src="/Portfolio/img/courses/web/good-bad.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back card_goodbad">
+						<span class="card__title">Best and worst practices</span>
+						<p>What you should and shouldn't do.</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="section section_with-img practice">
+			<div class="section__text">
+				<h2 class="section-heading" id="practice"><a class="anchor-link" href="#practice">Practice</a></h2>
+				<p class="section-p">The practice consists of creating web page UI based on Figma design templates. In the short version of the course, students create one page. In the extended version there are two: training one and your typical commercial landing.</p>
+				<p class="section-p">I am currently working with three designs: training one by me, <a href="https://vallek.github.io/agency-landing/index.html">Agency landing</a> - easier one and <a href="https://vallek.github.io/e-comm/index.html">E-comm</a> - more complicated one. It is possible to use any other project chosen by me or by an institution (this will increase the duration of the course development)</p>
+				<p class="section-p">Depending on the desired difficulty, students can make the same site as the teacher or different one.</p>
+				<h3>For educational organizations with code reviewers/tutors</h3>
+				<p class="section-p">The practice is evaluated according to the criteria prepared for each site. Mentors will also have access to the finished product.</p>
+				<h3>For educational institutions without a review/for groups of students</h3>
+				<p class="section-p">An option without manual code review is possible. Instead, I will conduct master classes with gradual implementation. One section of the layout on each masterclass. We will also analyze popular mistakes that and answer student's questions.</p>
+			</div>
+			<div class="practice__images">
+				<img class="section__image section__image_back" src="/Portfolio/img/works/group.jpg" alt="" width="300" height="300">
+				<img class="section__image" src="/Portfolio/img/works/agency.webp" alt="" width="300" height="300">
+				<img class="section__image section__image_front" src="/Portfolio/img/works/e-comm.webp" alt="" width="300" height="300">
+			</div>
+		</section>
+		<section class="section">
+			<h2 class="section-heading" id="plan"><a class="anchor-link" href="#plan">Plan</a></h2>
+			<p class="page__text">The course is under development and may differ from the one below.</p>
+			<p class="page__text">(click on an item for details)</p>
+			<h3>First level / short course</h3>
+			<ol class="course">
+				<li class="course__item course__item_close">
+					<button class="course__heading">Introduction</button>
+					<ol class="course__content">
+						<li><a href="https://vallek.github.io/web-pres/learning.html">How to study effectively</a></li>
+						<li><a href="https://vallek.github.io/web-pres/internet.html">How web works</a></li>
+						<li>HTML beginnings</li>
+						<li>Code editors</li>
+						<li>First html elements (p, h1-h6, a, img)</li>
+					</ol>	
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">HTML basics</button>
+					<ol class="course__content">
+						<li>Nesting</li>
+						<li>Text markup (em, strong, q, blockquote)</li>
+						<li>Data markup (lists, tables)</li>
+						<li>CSS Basics (first properties, browsers default styles)</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">HTML forms + CSS basics</button>
+					<ol class="course__content">
+						<li>Selectors</li>
+						<li>Cascade, specificity, inheritance</li>
+						<li>Style sources, redefining styles</li>
+						<li>Devtools, DOM</li>
+						<li>Sending data: forms and buttons</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Searching info</button>
+					<ol class="course__content">
+						<li><a href="/Portfolio/pages/projects/en/search.html">Lecture: How to search info about frontend</a></li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">CSS basics</button>
+					<ol class="course__content">
+						<li>Layouts basics, display, flow</li>
+						<li>Box Model, margins</li>
+						<li>Positioning</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Figma for Frontend Developers</button>
+					<ol class="course__content">
+						<li><a href="/Portfolio/pages/projects/en/figma.html">Lecture: Figma for Frontend Developers</a></li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Modern layouts and training site</button>
+					<ol class="course__content">
+						<li>Flexbox</li>
+						<li>Planing your work, working with figma</li>
+						<li>Starting to work on training template</li>
+						<li>Semantic elements (header, main и footer)</li>
+					</ol>					
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Developing training site</button>
+					<ol class="course__content">
+						<li>Fonts</li>
+						<li>Multiple pages and links</li>
+						<li>Navigation (nav, lists for menus)</li>
+						<li>SVG</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Responsive basics</button>
+					<ol class="course__content">
+						<li>Types of responsive frontend</li>
+						<li>@media rule</li>
+						<li>Cross browser testing</li>
+					</ol>					
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">CSS Layouts evolution</button>
+					<ol class="course__content">
+						<li><a href="/Portfolio/pages/projects/en/layouts.html">Lecture "Evolution of CSS Layouts"</a></li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">JavaScript</button>
+					<ol class="course__content">
+						<li>Critical rendering path</li>
+						<li>Adding JavaScript</li>
+						<li>Writing our first js code for menu button</li>
+					</ol>					
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Backend and online services</button>
+					<ol class="course__content">
+						<li>Ways to built a site</li>
+						<li>Servers</li>
+						<li>CMS</li>
+						<li>Github Pages as frontend hosting</li>
+						<li>Online services for testing (errors, speed)</li>
+					</ol>					
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Finish line, about SEO, favicons, QnA</button>
+					<ol class="course__content">
+						<li>Video and maps (video, iframe)</li>
+						<li>About SEO</li>
+						<li>favicons, formats, online generators</li>
+						<li>Qna</li>
+						<li>Continue studying</li>
+						<li>Finding job</li>
+					</ol>					
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Additional webinars</button>
+					<ol class="course__content">
+						<li>Course preparation (what do you need to learn)</li>
+						<li>Web Color (digital color, color models)</li>
+						<li>Code editors</li>
+						<li><a href="https://youtu.be/7w9K34oL_LE">Can I include one html element into another</a></li>
+						<li><a href="/Portfolio/pages/projects/en/pop-mistakes.html">Popular Mistakes and How to Avoid Them</a></li>
+						<li>Devtools</li>
+						<li>Image formats</li>
+						<li>Web fonts (families, adding, properties)</li>
+						<li><a href="/Portfolio/pages/projects/en/bem.html">Introduction to BEM Methodology</a></li>
+						<li><a href="/Portfolio/pages/projects/en/git.html">Introduction to Git</a></li>
+					</ol>					
+				</li>
+			</ol>
+			<h3>Second level / additional webinars</h3>
+			<ol class="course">
+				<li class="course__item course__item_close">
+					<button class="course__heading">Git Version Control</button>
+					<ol class="course__content">
+						<li><a href="/Portfolio/pages/projects/en/git.html ">Lecture "Git Version Control"</a></li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Making commercial landing (approximately 10 parts)</button>
+					<ol class="course__content">
+						<li>Working with the layout in the Figma</li>
+						<li>Accessibility</li>
+						<li>Responsive layout</li>
+						<li>Common challenges</li>
+						<li>Cart and collecting data on JS</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Introduction to BEM methodology</button>
+					<ol class="course__content">
+						<li><a href="/Portfolio/pages/projects/en/bem.html ">Lecture "Introduction to BEM methodology"</a></li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Digital color</button>
+					<ol class="course__content">
+						<li>Introduction to Color Theory</li>
+						<li>Color models in CSS</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Working with fonts</button>
+					<ol class="course__content">
+						<li>Introduction to Typography and Web Fonts</li>
+						<li>Font Families</li>
+						<li>Ways to add fonts</li>
+						<li>Properties</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Image formats</button>
+					<ol class="course__content">
+						<li>Introduction to graphic files</li>
+						<li>Raster</li>
+						<li>Vector</li>
+						<li>New formats of the web</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Developer tools in browsers</button>
+					<ol class="course__content">
+						<li><a href="/Portfolio/pages/projects/en/devtools.html ">Lecture "Developer tools in browsers"</a></li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Code editors setup</button>
+					<ol class="course__content">
+						<li>Overview of the VS Code interface</li>
+						<li>Extensions</li>
+						<li>How to customize code editors</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">CSS Animations</button>
+					<ol class="course__content">
+						<li><a href="/Portfolio/pages/projects/en/css-anim.html ">Lecture "CSS Animations"</a></li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Evolution of methods for building websites</button>
+					<ol class="course__content">
+						<li>The beginning of the web</li>
+						<li>Static sites</li>
+						<li>Dynamics via JS</li>
+						<li>Dynamic sites via CMS</li>
+						<li>Static builders using the example of Jekyll</li>
+						<li>Types of SSR and CSR, Headless CMS</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">JavaScript Basics</button>
+					<ol class="course__content">
+						<li>Console</li>
+						<li>DOM manipulations (search, changes)</li>
+						<li>Variables</li>
+						<li>Event handlers</li>
+						<li>Functions</li>
+						<li>Conditional operators</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">JavaScript Basics part 2</button>
+					<ol class="course__content">
+						<li>Data Types</li>
+						<li>Comparison operators</li>
+						<li>Cycles</li>
+						<li>Working with HTML forms</li>
+						<li>Asynchronous requests</li>
+						<li>Storing the state on the client</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Criteria for evaluating frontend work</button>
+					<ol class="course__content">
+						<li>Analysis of all criteria</li>
+					</ol>
+				</li>
+				<li class="course__item course__item_close">
+					<button class="course__heading">Continuing education and job search</button>
+					<ol class="course__content">
+						<li>Continuing education</li>
+						<li>Job search</li>
+						<li>QnA</li>
+					</ol>
+				</li>
+			</ol>
+			<p class="section-p">You can find list of all webinars <a href="/Portfolio/pages/projects/en/all-lectures.html">on a separate page</a>.</p>
+		</section>
+		<article class="action action_bottom">
+			<a class="action-button action-button_email" href="mailto:vwebdis@gmail.com">vwebdis@gmail.com</a>
+			<a class="action-button action-button_tm" href="https://t.me/webval">t.me/webval</a>
+		</article>
+		<section class="section places card">
+			<h2 class="section-heading" id="places"><a class="anchor-link" href="#places">Places</a></h2>
+			<ul class="card__list card__list_places">
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_innop card__image_places card__image_contain" src="/Portfolio/img/jobs/innopolis.webp" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title card__title_place" href="/Portfolio/pages/jobs/en/innopolis.html">Innopolis University</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_sd card__image_places card__image_contain" src="/Portfolio/img/jobs/sd-logo.webp" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title card__title_place" href="/Portfolio/pages/jobs/en/sd.html">Employment Exchange</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places" src="/Portfolio/img/jobs/involta.webp" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title card__title_place" href="/Portfolio/pages/jobs/en/involta.html">Involta Education</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places" src="/Portfolio/img/jobs/skillf.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title card__title_place" href="/Portfolio/pages/jobs/en/skillf.html">Skillfactory</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places" src="/Portfolio/img/jobs/banana.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title card__title_place" href="/Portfolio/pages/jobs/en/banana.html">Digital Banana</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places" src="/Portfolio/img/jobs/basis.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title card__title_place" href="/Portfolio/pages/jobs/en/basis.html">Basis education center</a> 
+					</div>
+				</li>
+				<li class="card__item">
+					<div class="card__face">
+						<img class="card__image card__image_places" src="/Portfolio/img/jobs/socins.png" alt="" width="300" height="300">
+					</div>
+					<div class="card__back">
+						<a class="card__title card__title_place" href="/Portfolio/pages/jobs/en/socins.html">Social-economical institute</a> 
+					</div>
+				</li>
+			</ul>
+		</section>
 	</main>
-		<footer class="footer">
-	<p class="copyright footer__copyright">&copy; 2018—2023 built on Jekyll <a href="mailto:vwebdis@gmail.com">by Vallek</a></p>
-	<div class="attribution footer__attribution">
-		Icons made by <a class="attribution__link" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a class="attribution__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-		<a class="attribution__link" href="https://www.freepik.com/free-photos-vectors/watercolor">Watercolor vector created by creativelyab - www.freepik.com</a><br>
-		<a class="attribution__link" href='https://www.freepik.com/vectors/web'>Web vector created by stories - www.freepik.com</a>
-		<a class="attribution__link" href="https://www.freepik.com/vectors/texture">Texture vector created by macrovector - www.freepik.com</a>
-		Icons made by <a class="attribution__link" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a class="attribution__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-	</div>
-</footer>
-  </body>
+	<footer class="footer">
+		<span class="section-p footer__copy">&copy; 2018—2023 built on Jekyll <a href="mailto:vwebdis@gmail.com">by Vallek</a></span>
+		<span class="footer__attribution"><a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Freepik - Flaticon</a><a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Flat Icons - Flaticon</a><a href="https://www.flaticon.com/free-icons/study" title="study icons">Study icons created by Chanut-is-Industries - Flaticon</a><a href="https://www.flaticon.com/free-icons/experience" title="experience icons">Experience icons created by Freepik - Flaticon</a><a href="https://www.flaticon.com/free-icons/world" title="world icons">World icons created by Freepik - Flaticon</a></span>
+	</footer>
+</body>
 </html>
