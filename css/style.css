@@ -158,7 +158,7 @@ a:focus {
 }
 
 .hire-me {
-	/* display: none; */
+	display: none;
 	white-space: pre;
 	color: white;
 	background-color: var(--accent-color);
