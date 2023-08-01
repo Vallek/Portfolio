@@ -158,7 +158,6 @@ a:focus {
 }
 
 .hire-me {
-	display: none;
 	white-space: pre;
 	color: white;
 	background-color: var(--accent-color);
@@ -1096,3 +1095,7 @@ a:focus {
 .consult_en {
 	display: none;
 } */
+
+.hire-me {
+	display: none;
+}
