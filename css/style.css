@@ -55,6 +55,10 @@ a:focus {
 	color: var(--color-grey);
 }
 
+.dark .box-item {
+	outline: 1px solid #202020;
+}
+
 .dark .box-item__heading {
 	color: var(--color-grey);
 	background-color: var(--background-dark);
