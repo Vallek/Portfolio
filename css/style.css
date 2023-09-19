@@ -50,7 +50,8 @@ a:focus {
 .dark a,
 .dark .anchor-link,
 .dark .skills__link,
-.dark .crumbs-link:hover {
+.dark .crumbs-link:hover,
+.dark .course__heading {
 	color: var(--color-grey);
 }
 
