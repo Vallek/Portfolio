@@ -82,7 +82,7 @@ a:focus {
 }
 
 .dark .last-posts {
-	filter: invert(1) hue-rotate(180deg);
+	filter: invert(0.81) hue-rotate(180deg);
 }
 
 .dark .anchor-link:hover::after,
