@@ -18,11 +18,12 @@
 	font-display: block;
 }
 
-:root {
-	--accent-color: rgb(240, 104, 41);
-}
-
 .home {
+	--text-color: #000;
+	--heading-color: #442010;
+	--accent-color: rgb(240, 104, 41);
+	--background-dark: #343131;
+	--color-grey: #d9d9d9;
 	line-height: initial;
 	font-family: 'Open Sans', sans-serif;
 	max-width: 1920px;
@@ -38,6 +39,52 @@ a:focus {
 	outline-offset: 2px;
 }
 
+/* Dark theme */
+.home.dark {
+	--text-color: #d9d9d9;
+	--heading-color: #d9d9d9;
+	color: var(--color-grey);
+	background-color: var(--background-dark);
+}
+
+.dark a,
+.dark .anchor-link,
+.dark .skills__link,
+.dark .crumbs-link:hover {
+	color: var(--color-grey);
+}
+
+.dark .box-item__heading {
+	color: var(--color-grey);
+	background-color: var(--background-dark);
+}
+
+.dark .info {
+	background-color: var(--background-dark);
+}
+
+.dark .locales__lang:hover::before {
+	background-color: var(--color-grey);
+}
+
+.dark .themes__theme:hover::before {
+	background-color: var(--color-grey);
+}
+
+.dark .social-logo_github,
+.dark .social-logo_codepen {
+	filter: invert(1);
+}
+
+.dark .last-posts {
+	filter: invert(1) hue-rotate(180deg);
+}
+
+.dark .anchor-link:hover::after,
+.dark .anchor-link:focus::after {
+	color: var(--color-grey);
+}
+
 /* Header */
 .header {
 	box-sizing: border-box;
@@ -47,8 +94,6 @@ a:focus {
 	margin: 0 auto 1.6em;
 	width: 100%;
 	padding: 0 2vw;
-	--text-color: #000;
-	--heading-color: #442010;
 }
 
 .header__intro {
@@ -164,56 +209,6 @@ a:focus {
 	padding: 0 0.3em;
 }
 
-.locales__text {
-	font-size: 1rem;
-	font-weight: 400;
-	margin-top: 0;
-	margin-bottom: 0.3em;
-}
-
-.locales__lang {
-	color: var(--text-color);
-	position: relative;
-	font-weight: 600;
-	text-decoration: none;
-}
-
-.locales__lang:hover::before {
-	content: '';
-	display: inline-block;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 2px;
-	background-color: black;
-}
-
-.locales__lang:not(:last-of-type) {
-	margin-right: 0.7em;
-}
-
-.locales__lang_ru::after {
-	content: '';
-	display: inline-block;
-	background-image: url('../img/icons/flag-ru.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 1em;
-	height: 1em;
-	margin-left: 0.2em;
-}
-
-.locales__lang_en::after {
-	content: '';
-	display: inline-block;
-	background-image: url('../img/icons/flag-uk.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 1em;
-	height: 1em;
-	margin-left: 0.2em;
-}
-
 .social-links {
 	display: flex;
 	flex-wrap: wrap;
@@ -274,6 +269,96 @@ a:focus {
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: 18%;
+}
+
+.locales {
+	display: inline-flex;
+	justify-content: end;
+	margin-right: 2em;
+}
+
+.locales__text {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 0.3em;
+}
+
+.locales__lang {
+	color: var(--text-color);
+	position: relative;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.locales__lang:hover::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+}
+
+.locales__lang_ru {
+	order: 1;
+}
+
+.locales__lang_en {
+	order: 3;
+}
+
+.locales::after {
+	order: 2;
+	content: '/';
+	display: inline-block;
+	font-weight: bold;
+	margin: 0 0.5em;
+}
+
+.themes {
+	display: inline-flex;
+}
+
+.themes::after {
+	order: 2;
+	content: '/';
+	display: inline-block;
+	font-weight: bold;
+	margin: 0 0.5em;
+}
+
+.themes__theme_light {
+	order: 1;
+}
+
+.themes__theme_dark {
+	order: 3;
+}
+
+.themes__text {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 0.3em;
+}
+
+.themes__theme {
+	color: var(--text-color);
+	position: relative;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.themes__theme:hover::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: black;
 }
 
 .header__show {
