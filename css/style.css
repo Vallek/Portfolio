@@ -35,7 +35,7 @@
 }
 
 a:focus {
-	outline: 3px dashed;
+	outline: 3px dashed var(--text-color);
 	outline-offset: 2px;
 }
 
@@ -651,6 +651,11 @@ a:focus {
 	flex-direction: column-reverse;
 	color: #fff;
 }
+
+/* .box-item__image-link:focus {
+	outline: 3px dashed black;
+	outline-offset: 2px;
+} */
 
 .box-item__image-link_closed::after {
 	content: 'Не проводится';
