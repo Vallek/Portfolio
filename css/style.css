@@ -34,7 +34,7 @@
     flex-direction: column;
 }
 
-a:focus {
+a:focus-visible {
 	outline: 3px dashed var(--text-color);
 	outline-offset: 2px;
 }
@@ -86,7 +86,7 @@ a:focus {
 }
 
 .dark .anchor-link:hover::after,
-.dark .anchor-link:focus::after {
+.dark .anchor-link:focus-visible::after {
 	color: var(--color-grey);
 }
 
@@ -232,7 +232,7 @@ a:focus {
 	position: relative;
 }
 
-.social-link:focus {
+.social-link:focus-visible {
 	outline: 3px dashed var(--text-color);
 	outline-offset: 2px;
 }
@@ -377,7 +377,7 @@ a:focus {
 	border-radius: 5px;
 }
 
-.header__show:focus {
+.header__show:focus-visible {
 	outline: 3px dashed var(--text-color);
 	outline-offset: 2px;
 }
@@ -529,7 +529,7 @@ a:focus {
 }
 
 .anchor-link:hover::after,
-.anchor-link:focus::after {
+.anchor-link:focus-visible::after {
 	content: ' #';
 	color: rgba(0,0,0,0.5);
 }
@@ -652,7 +652,7 @@ a:focus {
 	color: #fff;
 }
 
-/* .box-item__image-link:focus {
+/* .box-item__image-link:focus-visible {
 	outline: 3px dashed black;
 	outline-offset: 2px;
 } */
@@ -1056,7 +1056,7 @@ a:focus {
 	word-wrap: break-word;
 }
 
-.course__heading:focus {
+.course__heading:focus-visible {
 	outline: 3px dashed;
 	outline-offset: 2px;
 }
@@ -1098,7 +1098,7 @@ a:focus {
 	background-color: var(--accent-color);
 }
 
-.sign-up-link:focus {
+.sign-up-link:focus-visible {
 	outline-color: black;
 }
 
@@ -1114,7 +1114,7 @@ a:focus {
 	left: 0;
 }
 
-.skip-to-main:focus {
+.skip-to-main:focus-visible {
 	border: initial;
 	clip: initial;
 	height: initial;
