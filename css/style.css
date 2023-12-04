@@ -55,10 +55,6 @@ a:focus-visible {
 	color: var(--color-grey);
 }
 
-.dark .box-item {
-	outline: 1px solid #202020;
-}
-
 .dark .box-item__heading {
 	color: var(--color-grey);
 	background-color: var(--background-dark);
@@ -561,8 +557,9 @@ a:focus-visible {
 	height: 300px;
 	margin-right: 2em;
 	margin-bottom: 2em;
-	outline: 1px solid #e2e2e2;
 	background-color: #123452;
+	transition: all 0.1s ease-in;
+	box-shadow: 0px 0px 6px -3px rgb(56, 56, 56);
 }
 
 @supports (gap: 1em) {
@@ -686,13 +683,8 @@ a:focus-visible {
 }
 
 .box-item:hover {
-	outline: initial;
+	transform: translate(-2%, -2%) scale(1.03);
 	box-shadow: 5px 3px 10px -3px rgb(56, 56, 56);
-}
-
-.box-item:hover .box-item__image {
-	transform: scale(1.1);
-	transition: 0.2s ease-in;
 }
 
 .box-item__image_ipap {
