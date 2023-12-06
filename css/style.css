@@ -740,6 +740,10 @@ a:focus-visible {
 	background-color: rgb(39, 37, 38);
 }
 
+.box-item__image_roadmap {
+	background-color: #b27010;
+}
+
 .box-item__heading {
 	color: black;
 	font-weight: 400;
